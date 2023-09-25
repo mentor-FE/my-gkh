@@ -15,26 +15,201 @@ import reformagkh from '@/public/style/reformagkh.png'
 export default function Home() {
   return (
     <div className='flex flex-col mt-2'>
-      <main className='bg-white rounded-lg p-2 lg:p-6'>
-        <h1 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>
-          Добро пожаловать, уважаемые Друзья и Коллеги!
-        </h1>
-        <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
-          Рады Вас приветствовать на web-сайте нашего проекта. Рискнем
-          предположить, что если Вы нас посетили, то Ваша деятельность каким-то
-          образом связано со сферой жилищно-коммунального хозяйства. Возможно,
-          Вы руководитель управляющей организации, председатель ТСЖ (ТСН, ЖСК и
-          т.п.) либо иное заинтересованное лицо. Как бы там ни было, надеемся,
-          что на нашем портале Вы сможете найти то, что искали, и мы сможем
-          разрешить Ваши проблемы.
-        </p>
-        <p className='indent-5 lg:text-xl lg:leading-8'>
-          В связи с чем, рекомендуем Вам ознакомиться с перечнем услуг,
-          предоставляемых нашей организацией, и, если Вас что-либо заинтересует,
-          свяжитесь с нами по реквизитам, размещенных в разделе «Контакты».
-        </p>
-      </main>
-      <sidebar className='bg-[#fff5ee] flex flex-col rounded-lg mt-2 py-4 px-2 gap-4'>
+      <div className='xl:flex xl:flex-row'>
+        <sidebar className='bg-[#fff5ee]  rounded-lg py-4 px-2 gap-4 hidden xl:flex flex-col'>
+          <div className='rounded-lg bg-white flex flex-col gap-4 pb-4'>
+            <div className='bg-[#fa9d1c] rounded-t-lg h-16 flex justify-center items-center p-2 text-center'>
+              Заполнение информации на web-сайтах ГИС ЖКХ и Реформа ЖКХ
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={upr.src} alt='upr' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Описание услуги
+                </Link>
+                <div className='text-sm'>
+                  В данном разделе подробно описаны условия оказания услуги
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={reg.src} alt='reg' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
+                >
+                  Организации на обслуживании
+                </Link>
+                <div className='text-sm'>
+                  В данном разделе перечислены организации, обслуживанием
+                  которых занимается управляющий
+                </div>
+              </div>
+            </div>
+
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={idin.src} alt='upr' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Система приглашений
+                </Link>
+                <div className='text-sm'>
+                  В данном разделе описано, как Вы можете получить скидку на
+                  наши услуги путем привлечения новых клиентов
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='rounded-lg bg-white flex flex-col gap-4 pb-4'>
+            <div className='bg-[#fa9d1c] rounded-t-lg h-16 flex justify-center items-center p-2 text-center'>
+              Бухгалтерские услуги
+            </div>
+
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={upr.src} alt='upr' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Описание услуги
+                </Link>
+                <div className='text-sm'>
+                  В данном разделе подробно описаны условия оказания услуги
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={sendrep.src} alt='sendrep' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Сдача отчетов
+                </Link>
+                <div className='text-sm'>
+                  Сдадим за Вас отчеты в ФСС, ПФР, ФНС и Росстат, подробности
+                  читайте в разделе.
+                </div>
+              </div>
+            </div>
+
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={reg.src} alt='reg' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
+                >
+                  Организации на обслуживании
+                </Link>
+                <div className='text-sm'>
+                  В данном разделе перечислены организации, заключившие договоры
+                  на оказание бухгалтерских услуг.
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={frcon.src} alt='frcon' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Бесплатные консультации
+                </Link>
+                <div className='text-sm'>
+                  Необходимы советы и помощь в бухгалтерии? Мы можем помочь.
+                  Бесплатно. Подробности читайте в разделе.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='rounded-lg bg-white flex flex-col gap-4 pb-4'>
+            <div className='bg-[#fa9d1c] rounded-t-lg h-16 flex justify-center items-center p-2 text-center'>
+              Прочии услуги
+            </div>
+
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={regdel.src} alt='regdel' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Регистрация ТСЖ (ТСН)
+                </Link>
+                <div className='text-sm'>
+                  Хотите создать ТСЖ (ТСН) в Вашем доме, но не знаете с чего
+                  начать? Тогда данный раздел для Вас.
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={egru.src} alt='egru' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2'
+                >
+                  Внесение изменений в ЕГРЮЛ
+                </Link>
+                <div className='text-sm'>
+                  Хотите сменить председателя ТСЖ (ТСН)? Или внести изменения в
+                  устав организации? Мы Вам поможем.
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#f5f5dc] rounded-lg flex p-2 gap-2 items-start mx-2'>
+              <img src={congregation.src} alt='congregation' />
+              <div className='flex flex-col justify-center flex-grow'>
+                <Link
+                  href='/'
+                  className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
+                >
+                  Проведение собраний
+                </Link>
+                <div className='text-sm'>
+                  Поможем провести общее собрание собственников помещений
+                  (членов ТСЖ (ТСН)) в Вашем многоквартирном доме и составить
+                  протокол собрания, соответствующий требованиям действующего
+                  законодательства.
+                </div>
+              </div>
+            </div>
+          </div>
+        </sidebar>
+        <main className='bg-white rounded-lg p-2 lg:p-6'>
+          <h1 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>
+            Добро пожаловать, уважаемые Друзья и Коллеги!
+          </h1>
+          <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
+            Рады Вас приветствовать на web-сайте нашего проекта. Рискнем
+            предположить, что если Вы нас посетили, то Ваша деятельность
+            каким-то образом связано со сферой жилищно-коммунального хозяйства.
+            Возможно, Вы руководитель управляющей организации, председатель ТСЖ
+            (ТСН, ЖСК и т.п.) либо иное заинтересованное лицо. Как бы там ни
+            было, надеемся, что на нашем портале Вы сможете найти то, что
+            искали, и мы сможем разрешить Ваши проблемы.
+          </p>
+          <p className='indent-5 lg:text-xl lg:leading-8'>
+            В связи с чем, рекомендуем Вам ознакомиться с перечнем услуг,
+            предоставляемых нашей организацией, и, если Вас что-либо
+            заинтересует, свяжитесь с нами по реквизитам, размещенных в разделе
+            «Контакты».
+          </p>
+        </main>
+      </div>
+
+      <sidebar className='bg-[#fff5ee] flex flex-col rounded-lg mt-2 py-4 px-2 gap-4 xl:hidden'>
         <div className='rounded-lg bg-white flex flex-col gap-4 pb-4'>
           <div className='bg-[#fa9d1c] rounded-t-lg h-16 flex justify-center items-center p-2 text-center'>
             Заполнение информации на web-сайтах ГИС ЖКХ и Реформа ЖКХ

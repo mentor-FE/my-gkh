@@ -69,7 +69,7 @@ const HeaderDesctop = () => {
             md:mt-[15px] md:ml-[140px]
             lg:text-base lg:mt-[17px] lg:ml-[192px]
             xl:ml-[230px] xl:mt-[32px]
-            2xl:text-xl 2xl:ml-[240px] 2xl:mt-[23px]
+            2xl:text-xl 2xl:ml-[240px] 2xl:mt-[25px]
             '
             >
               <div className='cursor-pointer'>

@@ -43,7 +43,7 @@ async function fetchData() {
 
 async function main() {
     const data = await fetchData();
-    await fs.writeFile('data.js', JSON.stringify(data, null, 2));
+    await fs.writeFile('../gkh-next/public/data.json', JSON.stringify(data, null, 2));
     console.log('Данные успешно сохранены в файл data.json');
 }
 

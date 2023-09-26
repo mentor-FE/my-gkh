@@ -1,0 +1,70 @@
+[
+  {
+    "id": "enterprise_1",
+    "enterprise": "ТСН \"КИРПИЧНАЯ 17\" ИНН 2361016130",
+    "is_active": 1,
+    "homes": [
+      {
+        "id": "home_1",
+        "adress": "Ейский р-н, Ейск г, Кирпичная ул, д. 17",
+        "is_active": 1,
+        "enterprise_id": "enterprise_1",
+        "flats": [
+          {
+            "id": "flat_1",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_1"
+          },
+          {
+            "id": "flat_2",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_1"
+          },
+          {
+            "id": "flat_3",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enterprise_2",
+    "enterprise": "ТСН \"ДРУЖБА\" ИНН 2361012777",
+    "is_active": 1,
+    "homes": [
+      {
+        "id": "home_2",
+        "adress": "Ейский р-н, Ейск г, Дружбы пер, д. 4",
+        "is_active": 1,
+        "enterprise_id": "enterprise_2",
+        "flats": [
+          {
+            "id": "flat_4",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_2"
+          }
+        ]
+      },
+      {
+        "id": "home_3",
+        "adress": "Ейский р-н, Ейск г. Дружбы пер. д. 4/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_2",
+        "flats": [
+          {
+            "id": "flat_5",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_3"
+          }
+        ]
+      }
+    ]
+  }
+]

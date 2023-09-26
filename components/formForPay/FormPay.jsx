@@ -1,9 +1,20 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const FormPay = () => {
   const [formData, setFormData] = useState({})
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch('/data.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data)
+      })
+  }, [])
+
+  console.log(data)
 
   const handleChange = (e) => {
     e.persist()
@@ -15,14 +26,7 @@ const FormPay = () => {
       }
 
       // Расчет суммы услуг
-      const sum = [
-        'SUMMA1',
-        'SUMMA2',
-        'SUMMA3',
-        'SUMMA4',
-        'SUMMA5',
-        'SUMMA6',
-      ]
+      const sum = ['SUMMA1', 'SUMMA2', 'SUMMA3', 'SUMMA4', 'SUMMA5', 'SUMMA6']
         .map((field) => parseFloat(updatedState[field]) || 0)
         .reduce((a, b) => a + b, 0)
 
@@ -36,7 +40,6 @@ const FormPay = () => {
     })
   }
 
-  console.log(formData)
   return (
     <form
       className='bg-white flex flex-col gap-8 p-10 rounded-[25px] shadow-2xl mt-2'
@@ -64,7 +67,11 @@ const FormPay = () => {
             required
           >
             <option value=''>-- Выберите организацию --</option>
-            <option value='ТСЖ "ДОМ КРАСНАЯ 47/3" ИНН 2361006893'>
+            {data.length &&
+              data.map((item) => (
+                <option key={item.id} value={item.enterprise}>{item.enterprise}</option>
+              ))}
+            {/* <option value='ТСЖ "ДОМ КРАСНАЯ 47/3" ИНН 2361006893'>
               ТСЖ "ДОМ КРАСНАЯ 47/3" ИНН 2361006893
             </option>
             <option value='ТСЖ "НОВОСТРОЙ 59" ИНН 2361009100'>
@@ -87,7 +94,7 @@ const FormPay = () => {
             </option>
             <option value='ТСН "МЕЖДУНАРОДНАЯ 28/1" ИНН 2361013467'>
               ТСН "МЕЖДУНАРОДНАЯ 28/1" ИНН 2361013467
-            </option>
+            </option> */}
           </select>
         </div>
       </div>
@@ -248,7 +255,6 @@ const FormPay = () => {
 
       {/*  Поле 5: Период оплаты */}
       <div className='grid md:grid-cols-3 md:gap-6'>
-        
         <div className=''>
           <label
             htmlFor='payment_period'

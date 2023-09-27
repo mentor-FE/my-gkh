@@ -31,13 +31,14 @@ const FormPay = () => {
 
   return (
     <form
-      className='bg-white flex flex-col gap-8 p-10 rounded-[25px] shadow-2xl mt-2'
+      className='bg-white flex flex-col gap-8 p-10 rounded-[25px] shadow-2xl'
       action='https://pay.kk.bank/services/83584'
       method='get'
       target='_blank'
       rel='noopener'
     >
-      <h2 className=''>Форма оплаты</h2>
+    <h3 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>Форма оплаты</h3>
+
       {/* Поле 1: Наименование управляющей организации и ИНН */}
       <SelectApp
         handleChange={handleChange}

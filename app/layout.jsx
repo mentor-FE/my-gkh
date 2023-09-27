@@ -3,6 +3,9 @@ import './globals.css'
 import { Oswald } from 'next/font/google'
 import { TheFooter } from '@/components/TheFooter'
 import bg from '@/public/style/background-site.jpg'
+import Sidebar from './sidebar/Sidebar'
+import SidebarMobile from './sidebar/SidebarMobile'
+import SidebarInformer from './sidebar/SidebarInformer'
 
 const oswald = Oswald({
   subsets: ['cyrillic'],
@@ -26,7 +29,16 @@ export default function RootLayout({ children }) {
         >
           <div className='min-h-screen container mx-auto flex flex-col justify-between 2xl:px-28 '>
             <TheHeader />
-            <main className='flex-auto'>{children}</main>
+            <main className='flex-auto'>
+              <div className='flex flex-col mt-2'>
+                <div className='xl:flex xl:flex-row'>
+                  <Sidebar />
+                  {children}
+                </div>
+                <SidebarMobile />
+                <SidebarInformer />
+              </div>
+            </main>
             <TheFooter />
           </div>
         </div>

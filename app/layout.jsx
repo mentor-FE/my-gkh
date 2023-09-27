@@ -3,9 +3,9 @@ import './globals.css'
 import { Oswald } from 'next/font/google'
 import { TheFooter } from '@/components/TheFooter'
 import bg from '@/public/style/background-site.jpg'
-import Sidebar from './sidebar/Sidebar'
-import SidebarMobile from './sidebar/SidebarMobile'
-import SidebarInformer from './sidebar/SidebarInformer'
+import Sidebar from '../components/sidebar/Sidebar'
+import SidebarMobile from '../components/sidebar/SidebarMobile'
+import SidebarInformer from '../components/sidebar/SidebarInformer'
 
 const oswald = Oswald({
   subsets: ['cyrillic'],

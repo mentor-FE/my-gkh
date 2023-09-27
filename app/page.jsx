@@ -1,6 +1,6 @@
-import Sidebar from "./sidebar/Sidebar"
-import SidebarMobile from "./sidebar/SidebarMobile"
-import SidebarInformer from "./sidebar/SidebarInformer"
+import Sidebar from "../components/sidebar/Sidebar"
+import SidebarMobile from "../components/sidebar/SidebarMobile"
+import SidebarInformer from "../components/sidebar/SidebarInformer"
 
 export default function Home() {
   return (

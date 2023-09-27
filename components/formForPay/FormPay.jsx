@@ -31,7 +31,7 @@ const FormPay = () => {
 
   return (
     <form
-      className='bg-white flex flex-col gap-8 p-10 rounded-[25px] shadow-2xl'
+      className='bg-white flex flex-col gap-8 p-10 rounded-lg shadow-2xl w-full'
       action='https://pay.kk.bank/services/83584'
       method='get'
       target='_blank'

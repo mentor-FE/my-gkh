@@ -2,17 +2,17 @@ const mysql = require('mysql2/promise');
 const fs = require('fs').promises;
 
 async function getEnterprises(connection) {
-    const [data] = await connection.execute('SELECT * FROM enterprises');
+    const [data] = await connection.execute('SELECT * FROM enterprises WHERE is_active = 1');
     return data;
 }
 
 async function getHomes(connection) {
-    const [data] = await connection.execute('SELECT * FROM homes');
+    const [data] = await connection.execute('SELECT * FROM homes WHERE is_active = 1');
     return data;
 }
 
 async function getFlats(connection) {
-    const [data] = await connection.execute('SELECT * FROM flats');
+    const [data] = await connection.execute('SELECT * FROM flats WHERE is_active = 1');
     return data;
 }
 

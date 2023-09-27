@@ -18,7 +18,7 @@ const FormPay = () => {
     if (e.target.name === 'NAMEADRESS') {
       setSelectedAdress(e.target.value)
     }
-    if (e.target.name === 'NAMEFLAT') {
+    if (e.target.name === 'flat') {
       setSelectedFlat(e.target.value)
     }
   }

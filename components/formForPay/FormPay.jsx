@@ -1,44 +1,32 @@
 'use client'
 
-import {  useState } from 'react'
+import { useState } from 'react'
 import SelectApp from './../select/SelectApp'
+import { handleFormDataChange } from './../../utils/culculate'
+import InputNumber from '../inputNum/InputNumber'
 
 const FormPay = () => {
   const [formData, setFormData] = useState({})
   const [selectedEnterprise, setSelectedEnterprise] = useState(null)
   const [selectedAdress, setSelectedAdress] = useState(null)
-  const [selectedFlat, setSelectedFlat] = useState(null)
+  const [, setSelectedFlat] = useState(null)
+
+  const handleSelections = (e) => {
+    if (e.target.name === 'NAME') {
+      setSelectedEnterprise(e.target.value)
+    }
+    if (e.target.name === 'NAMEADRESS') {
+      setSelectedAdress(e.target.value)
+    }
+    if (e.target.name === 'NAMEFLAT') {
+      setSelectedFlat(e.target.value)
+    }
+  }
+
   const handleChange = (e) => {
     e.persist()
-    setFormData((prevState) => {
-      // Обновляем текущее состояние формы
-      const updatedState = {
-        ...prevState,
-        [e.target.name]: e.target.value,
-      }
-
-      // Расчет суммы услуг
-      const sum = ['SUMMA1', 'SUMMA2', 'SUMMA3', 'SUMMA4', 'SUMMA5', 'SUMMA6']
-        .map((field) => parseFloat(updatedState[field]) || 0)
-        .reduce((a, b) => a + b, 0)
-
-      // Добавляем сумму услуг в состояние формы
-      updatedState['totalService'] = sum
-
-      // Вычисляем 0,07% от суммы и добавляем в состояние формы
-      updatedState['totalServicePercent'] = (sum * 0.0007).toFixed(2)
-
-      return updatedState
-    })
-    if(e.target.name === 'NAMEADRESS'){
-      setSelectedAdress(e.target.name === 'NAMEADRESS' && e.target.value)
-    }
-    if(e.target.name === 'NAME'){
-      setSelectedEnterprise(e.target.name === 'NAME' && e.target.value)
-    }
-    if(e.target.name === 'NAMEFLAT'){
-      setSelectedFlat(e.target.name === 'NAMEFLAT' && e.target.value)
-    }
+    setFormData((prevState) => handleFormDataChange(e, prevState))
+    handleSelections(e)
   }
 
   return (
@@ -51,7 +39,11 @@ const FormPay = () => {
     >
       <h2 className=''>Форма оплаты</h2>
       {/* Поле 1: Наименование управляющей организации и ИНН */}
-      <SelectApp handleChange={handleChange} selectedEnterprise={selectedEnterprise} selectedAdress={selectedAdress}/>
+      <SelectApp
+        handleChange={handleChange}
+        selectedEnterprise={selectedEnterprise}
+        selectedAdress={selectedAdress}
+      />
 
       {/*  Поле 4: Лицевой счет и одержание и текущий ремонт общего имущества МКД  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
@@ -75,68 +67,35 @@ const FormPay = () => {
         </div>
         {/* Поле 8: Содержание и текущий ремонт общего имущества МКД */}
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA1'
             id='floating_service'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='Содержание и текущий ремонт общего имущества МКД:'
           />
-          <label
-            htmlFor='floating_service'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Содержание и текущий ремонт общего имущества МКД:
-          </label>
         </div>
       </div>
 
       {/*  КРСОИ по ХВС  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA2'
             id='floating_service2'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='КРСОИ по ХВС:'
           />
-          <label
-            htmlFor='floating_service2'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            КРСОИ по ХВС:
-          </label>
         </div>
 
         {/*  Поле 10: КРСОИ по ГВС  */}
 
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA3'
             id='floating_service3'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='КРСОИ по ГВС:'
           />
-          <label
-            htmlFor='floating_service3'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            КРСОИ по ГВС:
-          </label>
         </div>
       </div>
 
@@ -144,66 +103,33 @@ const FormPay = () => {
       <div className='grid md:grid-cols-2 md:gap-6'>
         {/*  КРСОИ по Водоотведению  */}
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA4'
             id='floating_service4'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='КРСОИ по Водоотведению:'
           />
-          <label
-            htmlFor='floating_service4'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            КРСОИ по Водоотведению:
-          </label>
         </div>
         {/*  КРСОИ по Электроэнергии  */}
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA5'
             id='floating_service5'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='КРСОИ по Электроэнергии:'
           />
-          <label
-            htmlFor='floating_service5'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            КРСОИ по Электроэнергии:
-          </label>
         </div>
       </div>
 
       {/*  Капитальный ремонт  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='number'
+          <InputNumber
+            onChange={handleChange}
             name='SUMMA6'
             id='floating_service6'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            step='0.01'
-            min='0'
-            required
+            text='Капитальный ремонт:'
           />
-          <label
-            htmlFor='floating_service6'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Капитальный ремонт:
-          </label>
         </div>
       </div>
 
@@ -226,29 +152,10 @@ const FormPay = () => {
             <option value='022023'>Февраль 2023</option>
           </select>
         </div>
-        {/*  Поле 3: Номер помещения  */}
-        {/* <div className=''>
-          <label
-            htmlFor='room'
-            className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
-          >
-            Номер помещения:
-          </label>
-          <select
-            onChange={(e) => handleChange(e)}
-            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-            id='room'
-            name='room'
-          >
-            <option value='Квартира №38'>Квартира №38</option>
-            <option value='Квартира №39'>Квартира №39</option>
-            <option value='Квартира №40'>Квартира №40</option>
-          </select>
-        </div> */}
       </div>
 
       {/* Адрес плательщика  */}
-      <div className='grid md:grid-cols-3 md:gap-6'>
+      <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
@@ -285,6 +192,8 @@ const FormPay = () => {
           </label>
         </div>
         {/* Поле 7: Телефон плательщика -*/}
+      </div>
+      <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
@@ -302,6 +211,23 @@ const FormPay = () => {
             Телефон плательщика:
           </label>
         </div>
+        <div className='relative z-0 w-full mb-6 group'>
+          <input
+            onChange={(e) => handleChange(e)}
+            type='email'
+            name='EMAIL'
+            id='floating_email'
+            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
+            placeholder=' '
+            required
+          />
+          <label
+            htmlFor='floating_email'
+            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+          >
+            Email плательщика:
+          </label>
+        </div>
       </div>
 
       {/* Сумма платежа  */}
@@ -311,7 +237,7 @@ const FormPay = () => {
 
       {/*  Комиссия агента  */}
       <div className=''>
-        <div id='agent_fee'>
+        <div id='summa7'>
           Комиссия агента {formData?.totalServicePercent || 0} руб.
         </div>
       </div>

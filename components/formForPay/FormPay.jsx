@@ -1,21 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
+import SelectApp from './../select/SelectApp'
 
 const FormPay = () => {
   const [formData, setFormData] = useState({})
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    fetch('/data.json')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data)
-      })
-  }, [])
-
-  console.log(data)
-
+  const [selectedEnterprise, setSelectedEnterprise] = useState(null)
+  const [selectedAdress, setSelectedAdress] = useState(null)
+  const [selectedFlat, setSelectedFlat] = useState(null)
   const handleChange = (e) => {
     e.persist()
     setFormData((prevState) => {
@@ -38,6 +30,15 @@ const FormPay = () => {
 
       return updatedState
     })
+    if(e.target.name === 'NAMEADRESS'){
+      setSelectedAdress(e.target.name === 'NAMEADRESS' && e.target.value)
+    }
+    if(e.target.name === 'NAME'){
+      setSelectedEnterprise(e.target.name === 'NAME' && e.target.value)
+    }
+    if(e.target.name === 'NAMEFLAT'){
+      setSelectedFlat(e.target.name === 'NAMEFLAT' && e.target.value)
+    }
   }
 
   return (
@@ -49,56 +50,10 @@ const FormPay = () => {
       rel='noopener'
     >
       <h2 className=''>Форма оплаты</h2>
+      {/* Поле 1: Наименование управляющей организации и ИНН */}
+      <SelectApp handleChange={handleChange} selectedEnterprise={selectedEnterprise} selectedAdress={selectedAdress}/>
 
-      <div className='grid md:grid-cols-3 md:gap-6'>
-        {/* Поле 1: Наименование управляющей организации и ИНН */}
-        <div className=''>
-          <label
-            htmlFor='org'
-            className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
-          >
-            Наименование управляющей организации и ИНН:
-          </label>
-          <select
-            onChange={(e) => handleChange(e)}
-            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-            id='org'
-            name='NAME'
-            required
-          >
-            <option value=''>-- Выберите организацию --</option>
-            {data.length &&
-              data.map((item) => (
-                <option key={item.id} value={item.enterprise}>{item.enterprise}</option>
-              ))}
-            {/* <option value='ТСЖ "ДОМ КРАСНАЯ 47/3" ИНН 2361006893'>
-              ТСЖ "ДОМ КРАСНАЯ 47/3" ИНН 2361006893
-            </option>
-            <option value='ТСЖ "НОВОСТРОЙ 59" ИНН 2361009100'>
-              ТСЖ "НОВОСТРОЙ 59" ИНН 2361009100
-            </option>
-            <option value='ТСН "ГЕРЦЕНА 88/5" ИНН 2361012752'>
-              ТСН "ГЕРЦЕНА 88/5" ИНН 2361012752
-            </option>
-            <option value='ТСН "ДОМ НА КРАСНОЙ 35/2" ИНН 2361017704'>
-              ТСН "ДОМ НА КРАСНОЙ 35/2" ИНН 2361017704
-            </option>
-            <option value='ТСН (ЖИЛЬЯ) "ДОМ НА КРАСНОЙ 35/2 КОРПУС "А" ИНН 2361018539'>
-              ТСН (ЖИЛЬЯ) "ДОМ НА КРАСНОЙ 35/2 КОРПУС "А" ИНН 2361018539
-            </option>
-            <option value='ТСН "КАЗАЧЬЯ 2Г" ИНН 2361012985'>
-              ТСН "КАЗАЧЬЯ 2Г" ИНН 2361012985
-            </option>
-            <option value='ТСН "КОММУНИСТИЧЕСКАЯ 85/1" ИНН 2361012590'>
-              ТСН "КОММУНИСТИЧЕСКАЯ 85/1" ИНН 2361012590
-            </option>
-            <option value='ТСН "МЕЖДУНАРОДНАЯ 28/1" ИНН 2361013467'>
-              ТСН "МЕЖДУНАРОДНАЯ 28/1" ИНН 2361013467
-            </option> */}
-          </select>
-        </div>
-      </div>
-
+      {/*  Поле 4: Лицевой счет и одержание и текущий ремонт общего имущества МКД  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         {/*  Поле 4: Лицевой счет */}
         <div className='relative z-0 w-full mb-6 group'>
@@ -140,7 +95,7 @@ const FormPay = () => {
         </div>
       </div>
 
-      {/*  Поле 9: КРСОИ по ХВС  */}
+      {/*  КРСОИ по ХВС  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
           <input
@@ -185,9 +140,9 @@ const FormPay = () => {
         </div>
       </div>
 
-      {/*  Поле 11: КРСОИ по Водоотведению  */}
+      {/* КРСОИ по Водоотведению  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
-        {/*  Поле 11: КРСОИ по Водоотведению  */}
+        {/*  КРСОИ по Водоотведению  */}
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
@@ -207,7 +162,7 @@ const FormPay = () => {
             КРСОИ по Водоотведению:
           </label>
         </div>
-        {/*  Поле 12: КРСОИ по Электроэнергии  */}
+        {/*  КРСОИ по Электроэнергии  */}
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
@@ -229,9 +184,8 @@ const FormPay = () => {
         </div>
       </div>
 
-      {/*  Поле 13: Капитальный ремонт  */}
+      {/*  Капитальный ремонт  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
-        {/*  Поле 13: Капитальный ремонт  */}
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
@@ -253,7 +207,7 @@ const FormPay = () => {
         </div>
       </div>
 
-      {/*  Поле 5: Период оплаты */}
+      {/* Период оплаты */}
       <div className='grid md:grid-cols-3 md:gap-6'>
         <div className=''>
           <label
@@ -293,7 +247,7 @@ const FormPay = () => {
         </div> */}
       </div>
 
-      {/* Поле 6: Адрес плательщика  */}
+      {/* Адрес плательщика  */}
       <div className='grid md:grid-cols-3 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
           <input
@@ -350,19 +304,19 @@ const FormPay = () => {
         </div>
       </div>
 
-      {/*  Поле 14: Сумма платежа  */}
+      {/* Сумма платежа  */}
       <div className=''>
         <div id=''>Сумма платежа {formData?.totalService || 0} руб.</div>
       </div>
 
-      {/*  Поле 15: Комиссия агента  */}
+      {/*  Комиссия агента  */}
       <div className=''>
         <div id='agent_fee'>
           Комиссия агента {formData?.totalServicePercent || 0} руб.
         </div>
       </div>
 
-      {/*  Поле 16: Итого  */}
+      {/*  Итого  */}
       <div className=''>
         <div id='grand_total'>
           Итого{' '}
@@ -374,7 +328,7 @@ const FormPay = () => {
             (Number(formData?.totalServicePercent) || 0)} /> */}
       </div>
 
-      {/*  Поле 17: Согласие с договором оферты  */}
+      {/* Согласие с договором оферты  */}
 
       <fieldset className=''>
         <div className='flex items-center mb-4'>
@@ -418,7 +372,7 @@ const FormPay = () => {
         </div>
       </fieldset>
 
-      {/*  Поле 19: Кнопка для оплаты  */}
+      {/* Кнопка для оплаты  */}
       <button
         type='submit'
         className='mx-auto w-48 text-xl text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'

@@ -15,10 +15,10 @@ const FormPay = () => {
     if (e.target.name === 'NAME') {
       setSelectedEnterprise(e.target.value)
     }
-    if (e.target.name === 'NAMEADRESS') {
+    if (e.target.name === 'FLAT') {
       setSelectedAdress(e.target.value)
     }
-    if (e.target.name === 'flat') {
+    if (e.target.name === 'FLAT1') {
       setSelectedFlat(e.target.value)
     }
   }
@@ -216,7 +216,7 @@ const FormPay = () => {
           <input
             onChange={(e) => handleChange(e)}
             type='email'
-            name='EMAIL'
+            name='MAIL'
             id='floating_email'
             className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
             placeholder=' '
@@ -237,11 +237,32 @@ const FormPay = () => {
       </div>
 
       {/*  Комиссия агента  */}
-      <div className=''>
-        <div id='summa7'>
+      <div className='relative z-0 w-full mb-6 group'>
+      <input
+        onChange={(e) => onChange(e)}
+        type='number'
+        name='SUMMA7'
+        id='SUMMA7'
+        className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
+        placeholder=' '
+        min='0'
+        required
+        step='0.01'
+        value={formData?.totalServicePercent || 0}
+      />
+      <label
+        htmlFor='SUMMA7'
+        className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+      >
+         Комиссия агента {formData?.totalServicePercent || 0} руб.
+      </label>
+
+        </div>
+      {/* <div className=''>
+        <div id='SUMMA7'>
           Комиссия агента {formData?.totalServicePercent || 0} руб.
         </div>
-      </div>
+      </div> */}
 
       {/*  Итого  */}
       <div className=''>

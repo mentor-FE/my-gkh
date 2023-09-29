@@ -9,19 +9,21 @@ const FormPay = () => {
   const [formData, setFormData] = useState({})
   const [selectedEnterprise, setSelectedEnterprise] = useState(null)
   const [selectedAdress, setSelectedAdress] = useState(null)
-  const [, setSelectedFlat] = useState(null)
+  const [selectedFlat, setSelectedFlat] = useState(null)
+  const [agree, setAgree] = useState(false)
 
   const handleSelections = (e) => {
     if (e.target.name === 'NAME') {
       setSelectedEnterprise(e.target.value)
     }
-    if (e.target.name === 'FLAT') {
+    if (e.target.name === 'ADRESS1') {
       setSelectedAdress(e.target.value)
     }
     if (e.target.name === 'FLAT1') {
       setSelectedFlat(e.target.value)
     }
   }
+
 
   const handleChange = (e) => {
     e.persist()
@@ -37,7 +39,14 @@ const FormPay = () => {
       target='_blank'
       rel='noopener'
     >
-    <h3 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>Форма оплаты</h3>
+      <input
+        name='FLAT'
+        value={`${selectedAdress} ${selectedFlat}`}
+        className='hidden'
+      />
+      <h3 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>
+        Форма оплаты
+      </h3>
 
       {/* Поле 1: Наименование управляющей организации и ИНН */}
       <SelectApp
@@ -58,6 +67,7 @@ const FormPay = () => {
             className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
             placeholder=' '
             required
+            // pattern=".*(?:persAcc=|PERSACC=)([^\|]*).*"
           />
           <label
             htmlFor='floating_account'
@@ -136,7 +146,25 @@ const FormPay = () => {
 
       {/* Период оплаты */}
       <div className='grid md:grid-cols-3 md:gap-6'>
-        <div className=''>
+        <div className='relative z-0 w-full mb-6 group'>
+            <input
+              onChange={(e) => handleChange(e)}
+              type='text'
+              name='PERIOD'
+              id='floating_PERIOD'
+              className='placeholder:pl-24 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
+              placeholder='Формат: 012023'
+              required
+              pattern="\d{6}"
+            />
+            <label
+              htmlFor='floating_PERIOD'
+              className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+            >
+              Период оплаты:
+            </label>
+          </div>
+        {/* <div className=''>
           <label
             htmlFor='payment_period'
             className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
@@ -152,7 +180,7 @@ const FormPay = () => {
             <option value='012023'>Январь 2023</option>
             <option value='022023'>Февраль 2023</option>
           </select>
-        </div>
+        </div> */}
       </div>
 
       {/* Адрес плательщика  */}
@@ -232,48 +260,37 @@ const FormPay = () => {
       </div>
 
       {/* Сумма платежа  */}
-      <div className=''>
-        <div id=''>Сумма платежа {formData?.totalService || 0} руб.</div>
-      </div>
+      <div id=''>Сумма платежа {formData?.totalService || 0} руб.</div>
 
       {/*  Комиссия агента  */}
-      <div className='relative z-0 w-full mb-6 group'>
       <input
+        className='hidden'
         onChange={(e) => onChange(e)}
         type='number'
         name='SUMMA7'
-        id='SUMMA7'
-        className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-        placeholder=' '
-        min='0'
-        required
-        step='0.01'
         value={formData?.totalServicePercent || 0}
       />
-      <label
-        htmlFor='SUMMA7'
-        className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-      >
-         Комиссия агента {formData?.totalServicePercent || 0} руб.
-      </label>
 
-        </div>
-      {/* <div className=''>
-        <div id='SUMMA7'>
-          Комиссия агента {formData?.totalServicePercent || 0} руб.
-        </div>
-      </div> */}
+      <div id='SUMMA7a'>
+        Комиссия агента {formData?.totalServicePercent || 0} руб.
+      </div>
 
       {/*  Итого  */}
-      <div className=''>
-        <div id='grand_total'>
-          Итого{' '}
-          {(Number(formData?.totalService) || 0) +
-            (Number(formData?.totalServicePercent) || 0)}{' '}
-          руб.
-        </div>
-        {/* <input type="number" name="DENGI_F" value={(Number(formData?.totalService) || 0) +
-            (Number(formData?.totalServicePercent) || 0)} /> */}
+      <input
+        className='hidden'
+        onChange={(e) => onChange(e)}
+        name='amount'
+        value={
+          (Number(formData?.totalService) || 0) +
+          (Number(formData?.totalServicePercent) || 0)
+        }
+      />
+
+      <div id='grand_total'>
+        Итого{' '}
+        {(Number(formData?.totalService) || 0) +
+          (Number(formData?.totalServicePercent) || 0)}{' '}
+        руб.
       </div>
 
       {/* Согласие с договором оферты  */}

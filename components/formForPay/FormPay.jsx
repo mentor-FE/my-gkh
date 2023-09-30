@@ -4,13 +4,20 @@ import { useState } from 'react'
 import SelectApp from './../select/SelectApp'
 import { handleFormDataChange } from './../../utils/culculate'
 import InputNumber from '../inputNum/InputNumber'
+import CheckboxField from '../checkboxField/checkboxField'
+import InputReadOnly from '../inputReadOnly/inputReadOnly'
+import InputText from '../inputText/inputText'
 
 const FormPay = () => {
   const [formData, setFormData] = useState({})
   const [selectedEnterprise, setSelectedEnterprise] = useState(null)
   const [selectedAdress, setSelectedAdress] = useState(null)
   const [selectedFlat, setSelectedFlat] = useState(null)
-  const [agree, setAgree] = useState(false)
+  const [isActiveAgreeOffer, setIsActiveAgreeOffer] = useState(null)
+  const [isActiveAgreePersonal, setIsActiveAgreePersonal] = useState(null)
+
+  console.log(isActiveAgreeOffer)
+  console.log(isActiveAgreePersonal)
 
   const handleSelections = (e) => {
     if (e.target.name === 'NAME') {
@@ -24,12 +31,13 @@ const FormPay = () => {
     }
   }
 
-
   const handleChange = (e) => {
     e.persist()
     setFormData((prevState) => handleFormDataChange(e, prevState))
     handleSelections(e)
   }
+
+  const isSend = isActiveAgreeOffer && isActiveAgreePersonal
 
   return (
     <form
@@ -39,11 +47,8 @@ const FormPay = () => {
       target='_blank'
       rel='noopener'
     >
-      <input
-        name='FLAT'
-        value={`${selectedAdress} ${selectedFlat}`}
-        className='hidden'
-      />
+      <InputReadOnly value={`${selectedAdress} ${selectedFlat}`} name='FLAT' />
+
       <h3 className='text-center text-xl font-bold mb-3 lg:text-4xl lg:mb-6'>
         Форма оплаты
       </h3>
@@ -58,24 +63,15 @@ const FormPay = () => {
       {/*  Поле 4: Лицевой счет и одержание и текущий ремонт общего имущества МКД  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         {/*  Поле 4: Лицевой счет */}
-        <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='text'
-            name='ACCOUNTNUMBER'
-            id='floating_account'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            required
-            // pattern=".*(?:persAcc=|PERSACC=)([^\|]*).*"
-          />
-          <label
-            htmlFor='floating_account'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Лицевой счёт:
-          </label>
-        </div>
+        <InputText
+          name='ACCOUNTNUMBER'
+          id='floating_account'
+          pattern='^(.*)(?i)persAcc=([^\|]*)(.*)$'
+          onChange={handleChange}
+        >
+          Лицевой счёт:
+        </InputText>
+
         {/* Поле 8: Содержание и текущий ремонт общего имущества МКД */}
         <div className='relative z-0 w-full mb-6 group'>
           <InputNumber
@@ -147,79 +143,45 @@ const FormPay = () => {
       {/* Период оплаты */}
       <div className='grid md:grid-cols-3 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
-            <input
-              onChange={(e) => handleChange(e)}
-              type='text'
-              name='PERIOD'
-              id='floating_PERIOD'
-              className='placeholder:pl-24 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-              placeholder='Формат: 012023'
-              required
-              pattern="\d{6}"
-            />
-            <label
-              htmlFor='floating_PERIOD'
-              className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-            >
-              Период оплаты:
-            </label>
-          </div>
-        {/* <div className=''>
+          <input
+            onChange={(e) => handleChange(e)}
+            type='text'
+            name='PERIOD'
+            id='floating_PERIOD'
+            className='placeholder:pl-24 placeholder:italic  block py-[12px] px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
+            placeholder='Формат: 012023'
+            required
+            pattern='^(.*)(?i)paymPeriod=(\d{2})(\d{4})(.*)$'
+          />
           <label
-            htmlFor='payment_period'
-            className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+            htmlFor='floating_PERIOD'
+            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
           >
             Период оплаты:
           </label>
-          <select
-            onChange={(e) => handleChange(e)}
-            className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-            id='payment_period'
-            name='PERIOD'
-          >
-            <option value='012023'>Январь 2023</option>
-            <option value='022023'>Февраль 2023</option>
-          </select>
-        </div> */}
+        </div>
       </div>
 
       {/* Адрес плательщика  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
-        <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='text'
-            name='FIO'
-            id='floating_fio_name'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            required
-          />
-          <label
-            htmlFor='floating_fio_name'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Фамилия Имя Отчество:
-          </label>
-        </div>
+        <InputText
+          name='FIO'
+          id='floating_fio_name'
+          pattern='^(.*)(?i)lastName=([^\|]*)(.*)firstName=([^\|]*)(.'
+          onChange={handleChange}
+        >
+          Фамилия Имя Отчество:
+        </InputText>
+
         {/* Поле 6: Адрес плательщика  */}
-        <div className='relative z-0 w-full mb-6 group'>
-          <input
-            onChange={(e) => handleChange(e)}
-            type='text'
-            name='ADDRESS'
-            id='floating_address'
-            className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-            placeholder=' '
-            required
-          />
-          <label
-            htmlFor='floating_address'
-            className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
-          >
-            Адрес плательщика:
-          </label>
-        </div>
+        <InputText
+          name='ADDRESS'
+          id='floating_address'
+          pattern='^(.*)(?i)payerAddress=([^\|]*)(.*)$'
+          onChange={handleChange}
+        >
+          Адрес плательщика:
+        </InputText>
         {/* Поле 7: Телефон плательщика -*/}
       </div>
       <div className='grid md:grid-cols-2 md:gap-6'>
@@ -269,6 +231,7 @@ const FormPay = () => {
         type='number'
         name='SUMMA7'
         value={formData?.totalServicePercent || 0}
+        readOnly
       />
 
       <div id='SUMMA7a'>
@@ -284,6 +247,7 @@ const FormPay = () => {
           (Number(formData?.totalService) || 0) +
           (Number(formData?.totalServicePercent) || 0)
         }
+        readOnly
       />
 
       <div id='grand_total'>
@@ -296,51 +260,32 @@ const FormPay = () => {
       {/* Согласие с договором оферты  */}
 
       <fieldset className=''>
-        <div className='flex items-center mb-4'>
-          <input
-            id='agree_offer'
-            type='checkbox'
-            name='agree_offer'
-            value=''
-            className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
-          />
-          <label
-            htmlFor='agree_offer'
-            className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
+        <CheckboxField name='agree_offer' setAgreeOffer={setIsActiveAgreeOffer}>
+          Я согласен с{' '}
+          <a
+            href='#'
+            className='text-blue-600 hover:underline dark:text-blue-500'
           >
-            {' '}
-            Я согласен с{' '}
-            <a
-              href='#'
-              className='text-blue-600 hover:underline dark:text-blue-500'
-            >
-              договором оферты
-            </a>
-            .
-          </label>
-        </div>
-        <div className='flex items-center mb-4'>
-          <input
-            id='agree_personal_data'
-            name='agree_personal_data'
-            type='checkbox'
-            value=''
-            className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
-          />
-          <label
-            htmlFor='agree_personal_data'
-            className='ml-2 text-sm font-medium text-gray-900 dark:text-gray-300'
-          >
-            {' '}
-            Я согласен с обработкой моих персональных данных .
-          </label>
-        </div>
+            договором оферты
+          </a>
+          .
+        </CheckboxField>
+
+        <CheckboxField
+          name='agree_personal_data'
+          setAgreeOffer={setIsActiveAgreePersonal}
+        >
+          Я согласен с обработкой моих персональных данных.
+        </CheckboxField>
       </fieldset>
 
       {/* Кнопка для оплаты  */}
       <button
+        disabled={!isSend}
         type='submit'
-        className='mx-auto w-48 text-xl text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+        className={`mx-auto w-48 text-xl text-white ${
+          isSend ? 'bg-blue-700 hover:bg-blue-800' : 'bg-blue-100'
+        }  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}
       >
         Оплатить
       </button>

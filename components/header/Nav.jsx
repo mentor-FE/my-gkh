@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import home from '@/public/style/home.png'
 import contact from '@/public/style/contact.png'
-import blog from '@/public/style/blog.png'
+// import blog from '@/public/style/blog.png'
 import about from '@/public/style/about.png'
 import sendrep from '@/public/style/sendrep.png'
 
@@ -10,9 +10,7 @@ const Nav = () => {
   return (
     <nav className='flex justify-center bg-[#fff5ee] rounded-3xl mt-2 py-2'>
       <div
-        className='max-w-[1240px] flex flex-grow flex-wrap justify-evenly gap-2
-
-    '
+        className='max-w-[1240px] flex flex-grow flex-wrap justify-evenly gap-2'
       >
         <Link
           href='/'

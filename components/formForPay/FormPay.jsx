@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react'
 import SelectApp from './../select/SelectApp'
 import { handleFormDataChange } from './../../utils/culculate'
@@ -15,9 +14,6 @@ const FormPay = () => {
   const [selectedFlat, setSelectedFlat] = useState(null)
   const [isActiveAgreeOffer, setIsActiveAgreeOffer] = useState(null)
   const [isActiveAgreePersonal, setIsActiveAgreePersonal] = useState(null)
-
-  console.log(isActiveAgreeOffer)
-  console.log(isActiveAgreePersonal)
 
   const handleSelections = (e) => {
     if (e.target.name === 'NAME') {
@@ -38,6 +34,8 @@ const FormPay = () => {
   }
 
   const isSend = isActiveAgreeOffer && isActiveAgreePersonal
+  const summ = (Number(formData?.totalService) || 0) +
+  (Number(formData?.totalServicePercent) || 0)
 
   return (
     <form
@@ -138,17 +136,14 @@ const FormPay = () => {
             text='Капитальный ремонт:'
           />
         </div>
-      </div>
-
-      {/* Период оплаты */}
-      <div className='grid md:grid-cols-3 md:gap-6'>
+        {/* Период оплаты */}
         <div className='relative z-0 w-full mb-6 group'>
           <input
             onChange={(e) => handleChange(e)}
             type='text'
             name='PERIOD'
             id='floating_PERIOD'
-            className='placeholder:pl-24 placeholder:italic  block py-[12px] px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
+            className='placeholder:pl-24 placeholder:italic  block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer'
             placeholder='Формат: 012023'
             required
             pattern='^(.*)(?i)paymPeriod=(\d{2})(\d{4})(.*)$'
@@ -225,30 +220,13 @@ const FormPay = () => {
       <div id=''>Сумма платежа {formData?.totalService || 0} руб.</div>
 
       {/*  Комиссия агента  */}
-      <input
-        className='hidden'
-        onChange={(e) => onChange(e)}
-        type='number'
-        name='SUMMA7'
-        value={formData?.totalServicePercent || 0}
-        readOnly
-      />
-
+      <InputReadOnly value={formData?.totalServicePercent || 0} name='SUMMA7' onChange={handleChange}/>
       <div id='SUMMA7a'>
         Комиссия агента {formData?.totalServicePercent || 0} руб.
       </div>
 
       {/*  Итого  */}
-      <input
-        className='hidden'
-        onChange={(e) => onChange(e)}
-        name='amount'
-        value={
-          (Number(formData?.totalService) || 0) +
-          (Number(formData?.totalServicePercent) || 0)
-        }
-        readOnly
-      />
+      <InputReadOnly value={summ} name='amount' onChange={handleChange}/>
 
       <div id='grand_total'>
         Итого{' '}
@@ -258,7 +236,6 @@ const FormPay = () => {
       </div>
 
       {/* Согласие с договором оферты  */}
-
       <fieldset className=''>
         <CheckboxField name='agree_offer' setAgreeOffer={setIsActiveAgreeOffer}>
           Я согласен с{' '}

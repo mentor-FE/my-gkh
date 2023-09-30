@@ -28,7 +28,7 @@ const Nav = () => {
             alt='home'
             className='
           sm:block w-10
-          lg:w-12
+          lg:w-14
     '
           />
           <span className='text-lg lg:text-3xl'>Главная</span>
@@ -47,12 +47,12 @@ const Nav = () => {
             alt='contacts'
             className='
           sm:block w-10
-          lg:w-12
+          lg:w-14
     '
           />
           <span className='text-lg lg:text-3xl'>Контакты</span>
         </Link>
-        <Link
+        {/* <Link
           href='/blog'
           className='flex justify-around items-center bg-white rounded-lg p-1 min-w-[130px]
         smm:px-2
@@ -66,11 +66,11 @@ const Nav = () => {
             alt='blog'
             className='
           sm:block w-10
-          lg:w-12
+          lg:w-14
     '
           />
           <span className='text-lg lg:text-3xl'>Блог</span>
-        </Link>
+        </Link> */}
         <Link
           href='/about'
           className='flex justify-around items-center bg-white rounded-lg p-1 min-w-[130px]
@@ -85,7 +85,7 @@ const Nav = () => {
             alt='about'
             className='
           sm:block w-10
-          lg:w-12
+          lg:w-14
     '
           />
           <span className='text-lg lg:text-3xl'>О проекте</span>
@@ -104,7 +104,7 @@ const Nav = () => {
             alt='pay'
             className='
           sm:block w-10
-          lg:w-12
+          lg:w-14
     '
           />
           <span className='text-lg lg:text-3xl'>Оплатить ЖКУ</span>

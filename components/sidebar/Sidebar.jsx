@@ -84,7 +84,7 @@ const Sidebar = () => {
           <img src={sendrep.src} alt='sendrep' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/submission'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Сдача отчетов
@@ -100,7 +100,7 @@ const Sidebar = () => {
           <img src={reg.src} alt='reg' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/buhInfo'
               className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
             >
               Организации на обслуживании
@@ -115,7 +115,7 @@ const Sidebar = () => {
           <img src={frcon.src} alt='frcon' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/buhFree'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Бесплатные консультации
@@ -136,7 +136,7 @@ const Sidebar = () => {
           <img src={regdel.src} alt='regdel' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/reg'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Регистрация ТСЖ (ТСН)
@@ -151,7 +151,7 @@ const Sidebar = () => {
           <img src={egru.src} alt='egru' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/edit'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Внесение изменений в ЕГРЮЛ
@@ -166,7 +166,7 @@ const Sidebar = () => {
           <img src={congregation.src} alt='congregation' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/sobranie'
               className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
             >
               Проведение собраний

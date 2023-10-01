@@ -19,5 +19,5 @@ const calculateServiceSum = (state) => {
 }
 
 const calculateServicePercent = (sum) => {
-  return (sum * 0.0007).toFixed(2)
+  return (sum * 0.019).toFixed(2)
 }

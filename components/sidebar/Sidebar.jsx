@@ -19,7 +19,7 @@ const Sidebar = () => {
           <img src={upr.src} alt='upr' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/description'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Описание услуги
@@ -33,7 +33,7 @@ const Sidebar = () => {
           <img src={reg.src} alt='reg' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/company'
               className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
             >
               Организации на обслуживании
@@ -49,7 +49,7 @@ const Sidebar = () => {
           <img src={idin.src} alt='upr' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/invitation'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Система приглашений
@@ -70,7 +70,7 @@ const Sidebar = () => {
           <img src={upr.src} alt='upr' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/buh'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Описание услуги

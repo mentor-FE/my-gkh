@@ -1,3 +1,5 @@
+
+import Link from 'next/link'
 const Invitation = () => {
   return (
     <article className='bg-white rounded-lg p-2 lg:p-6 w-full'>

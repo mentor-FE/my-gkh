@@ -95,11 +95,11 @@ const Reg = () => {
       <div className='mt-6'>
         <p className='indent-5 lg:text-xl lg:leading-8'>
         Бесплатно! Да, именно так. Если Вы в дальнейшем, после создания в Вашем доме ТСЖ, переходите к нам на обслуживание и заключаете с нами договор об оказании одной из следующих услуг:
+        </p>
         <ul className="ml-6 mt-6">
           <li className="list-disc"><Link className="text-sky-700" href='/services/description'>Заполнение информации на web-сайтах ГИС ЖКХ;</Link></li>
           <li className="list-disc"><Link className="text-sky-700" href='/services/buh'>Бухгалтерские услуги.</Link></li>
         </ul>
-        </p>
       </div>
       <p className='indent-5 lg:text-xl lg:leading-8 mt-6'>
       то мы с Вас не берем платы за нашу работу по созданию ТСЖ, Вы оплачиваете только госпошлину в размере 4000 рублей и электронная подпись для регистрации организации онлайн в размере 500 рублей.

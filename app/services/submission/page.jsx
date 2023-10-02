@@ -12,13 +12,13 @@ const Submission = () => {
       <div className='mt-6'>
         <p className='indent-5 lg:text-xl lg:leading-8'>
         Большое количество времени в работе бухгалтера забирает сдача многочисленных отчётов в многочисленные органы. Мы готовы Вам помочь в данном вопросе и взять данную проблему на себя. За Вас мы сдадим отчёты в следующие органы:
+        </p>
         <ul className="ml-6">
           <li className="list-disc">ФСС;</li>
           <li className="list-disc">ПФР;</li>
           <li className="list-disc">ФНС;</li>
           <li className="list-disc">Росстат</li>
         </ul>
-        </p>
       </div>
       <p className='my-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
       Стоимость услуг по сдаче отчётности составляет 1000 рублей 00 копеек в квартал.

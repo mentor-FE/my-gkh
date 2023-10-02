@@ -13,6 +13,7 @@ const BuhFree = () => {
       <div className='mt-6'>
         <p className='indent-5 lg:text-xl lg:leading-8'>
         Чтобы избежать штрафов и быть в курсе последних изменений – наша организация предлагает Вам бесплатную бухгалтерскую помощь, а именно:
+        </p>
         <ul className="ml-6">
           <li className="list-disc">Анализ документов организации;</li>
           <li className="list-disc">Оперативное доведение изменений законодательства;</li>
@@ -20,7 +21,6 @@ const BuhFree = () => {
           <li className="list-disc">Помощь в выборе системы налогооблажения;</li>
           <li className="list-disc">Консультации по текущим вопросам.</li>
         </ul>
-        </p>
       </div>
       <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8 mt-6'>
          Данной бонусной системой могут воспользоваться юридические лица, которые заключили с нами договор на оказание услуги

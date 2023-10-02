@@ -125,12 +125,9 @@ const Buh = () => {
         <CardPrice img={house3} price='8000' flets='От 101 до 150' />
         <CardPrice img={house4} price='10000' flets='От 151' />
       </div>
-
-      <hr/>
       <div className="flex justify-center items-center gap-5 ">
         <img src={house5.src} alt="" />
         <p className='text-xs my-10 md:text-lg'>
-
           Для управляющих компаний и других организаций условия ценообразования уточняются индивидуально.
         </p>
         <img src={house5.src} alt="" />

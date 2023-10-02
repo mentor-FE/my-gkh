@@ -20,7 +20,7 @@ const SidebarMobile = () => {
             <img src={upr.src} alt='upr' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/description'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Описание услуги
@@ -34,7 +34,7 @@ const SidebarMobile = () => {
             <img src={reg.src} alt='reg' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/company'
                 className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
               >
                 Организации на обслуживании
@@ -51,7 +51,7 @@ const SidebarMobile = () => {
           <img src={idin.src} alt='upr' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/invitation'
               className='text-center cursor-pointer underline text-[17px] mb-2'
             >
               Система приглашений
@@ -72,7 +72,7 @@ const SidebarMobile = () => {
             <img src={upr.src} alt='upr' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/buh'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Описание услуги
@@ -86,7 +86,7 @@ const SidebarMobile = () => {
             <img src={sendrep.src} alt='sendrep' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/submission'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Сдача отчетов
@@ -103,7 +103,7 @@ const SidebarMobile = () => {
             <img src={reg.src} alt='reg' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/buhInfo'
                 className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
               >
                 Организации на обслуживании
@@ -118,7 +118,7 @@ const SidebarMobile = () => {
             <img src={frcon.src} alt='frcon' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/buhFree'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Бесплатные консультации
@@ -140,7 +140,7 @@ const SidebarMobile = () => {
             <img src={regdel.src} alt='regdel' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/reg'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Регистрация ТСЖ (ТСН)
@@ -155,7 +155,7 @@ const SidebarMobile = () => {
             <img src={egru.src} alt='egru' />
             <div className='flex flex-col justify-center flex-grow'>
               <Link
-                href='/'
+                href='/services/edit'
                 className='text-center cursor-pointer underline text-[17px] mb-2'
               >
                 Внесение изменений в ЕГРЮЛ
@@ -171,7 +171,7 @@ const SidebarMobile = () => {
           <img src={congregation.src} alt='congregation' />
           <div className='flex flex-col justify-center flex-grow'>
             <Link
-              href='/'
+              href='/services/sobranie'
               className='text-center cursor-pointer underline text-[17px] mb-2 whitespace-nowrap'
             >
               Проведение собраний

@@ -122,7 +122,7 @@ const Reg = () => {
       <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8 mt-6'>
         Подробнее о системе приглашений можно узнать, связавшись с нами.
         Информация для связи размещена в разделе{' '}
-        <Link href='/contacts'>"Контакты"</Link>.
+        <Link className="text-sky-700" href='/contacts'>"Контакты"</Link>.
       </p>
   </article>
   )

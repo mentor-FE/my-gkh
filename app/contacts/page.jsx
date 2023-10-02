@@ -76,7 +76,7 @@ const Contacts = () => {
 
       <div className="grid mt-5">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.180077287456!2d38.28012791559945!3d46.70218137913505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e42ee772b4be2b%3A0x98fc858179c58dfc!2z0JDRgNC80LDQstC40YDRgdC60LDRjyDRg9C7LiwgNDUsINCV0LnRgdC6LCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUzNjgy!5e0!3m2!1sru!2sru!4v1537816546381"
-        className="w-full h-[400px]" frameborder="0" allowfullscreen=""></iframe>
+        className="w-full h-[400px]" frameBorder="0" allowFullScreen=""></iframe>
        </div>
 
     </article>

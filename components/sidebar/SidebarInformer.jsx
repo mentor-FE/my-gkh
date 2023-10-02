@@ -14,7 +14,7 @@ const SidebarInformer = () => {
         <div className='flex flex-col gap-2 justify-center items-center sm:flex-wrap sm:flex-row'>
           <div className='bg-[#f5f5dc] rounded-lg flex gap-2 border items-start mx-2 sm:max-w-[280px] sm:min-w-0'>
             <Link
-              href='/'
+              href='https://adm-yeisk.ru/'
               className='text-center cursor-pointer underline text-[17px] min-w-full'
             >
               <img
@@ -26,7 +26,7 @@ const SidebarInformer = () => {
           </div>
           <div className='bg-[#f5f5dc] rounded-lg flex gap-2 border items-start mx-2 sm:max-w-[280px] sm:min-w-0'>
             <Link
-              href='/'
+              href='https://dom.gosuslugi.ru/'
               className='text-center cursor-pointer underline text-[17px] min-w-full'
             >
               <img src={gis.src} alt='gis' className='min-w-full rounded-lg' />
@@ -34,7 +34,7 @@ const SidebarInformer = () => {
           </div>
           <div className='bg-[#f5f5dc] rounded-lg flex gap-2 border items-start mx-2 sm:max-w-[280px] sm:min-w-0'>
             <Link
-              href='/'
+              href='http://kapremont23.ru/'
               className='text-center cursor-pointer underline text-[17px] min-w-full'
             >
               <img src={nko.src} alt='nko' className='min-w-full rounded-lg' />
@@ -42,7 +42,7 @@ const SidebarInformer = () => {
           </div>
           <div className='bg-[#f5f5dc] rounded-lg flex gap-2 border items-start mx-2 sm:max-w-[280px] sm:min-w-0'>
             <Link
-              href='/'
+              href='https://www.reformagkh.ru/'
               className='text-center cursor-pointer underline text-[17px] min-w-full bg-white'
             >
               <img

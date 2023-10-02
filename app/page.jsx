@@ -1,4 +1,6 @@
 
+import Link from 'next/link'
+
 export default function Home() {
   return (
 
@@ -19,7 +21,7 @@ export default function Home() {
             В связи с чем, рекомендуем Вам ознакомиться с перечнем услуг,
             предоставляемых нашей организацией, и, если Вас что-либо
             заинтересует, свяжитесь с нами по реквизитам, размещенных в разделе
-            «Контакты».
+            <Link className="text-sky-700" href='/contacts'>"Контакты"</Link>.
           </p>
         </article>
 

@@ -49,7 +49,7 @@ const HeaderDesctop = () => {
               '
               >
                 Имеются вопросы? Зайдите в раздел{' '}
-                <Link href='/contacts' className='underline'>
+                <Link href='/contacts' className='underline text-sky-700'>
                   Контакты
                 </Link>
               </p>

@@ -1,3 +1,6 @@
+
+import Link from 'next/link'
+
 const About = () => {
   return (
     <article className='bg-white rounded-lg p-2 lg:p-6 w-full'>
@@ -74,7 +77,7 @@ const About = () => {
         </h3>
         <p className='mb-3 indent-5 lg:text-xl lg:leading-8'>
           Подробная информация о наших контактных данных изложена в разделе
-          «Контакты». Вы можете воспользоваться любым удобным для Вас способом.
+          <Link className="text-sky-700" href='/contacts'>"Контакты"</Link>. Вы можете воспользоваться любым удобным для Вас способом.
         </p>
       </div>
     </article>

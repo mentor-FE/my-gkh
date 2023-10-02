@@ -12,7 +12,7 @@ const Invitation = () => {
       <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
         Данной системой приглашений могут воспользоваться организации, которые
         желают заключить с нами договор на оказание услуг{' '}
-        <Link href='/'>по заполнению информации на web-сайтах ГИС ЖКХ</Link>.
+        <Link className="text-sky-700" href='/services/description'>по заполнению информации на web-сайтах ГИС ЖКХ</Link>.
       </p>
       <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
         Система бонусов крайне проста – если Вы рекомендуете нас новым клиентам,
@@ -29,7 +29,7 @@ const Invitation = () => {
       <p className='mb-3 indent-5 lg:text-xl lg:mb-6 lg:leading-8'>
         Подробнее о системе приглашений можно узнать, связавшись с нами.
         Информация для связи размещена в разделе{' '}
-        <Link href='/contacts'>"Контакты"</Link>.
+        <Link className="text-sky-700" href='/contacts'>"Контакты"</Link>.
       </p>
     </article>
   )

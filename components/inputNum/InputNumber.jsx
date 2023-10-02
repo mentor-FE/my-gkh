@@ -11,6 +11,7 @@ const InputNumber = ({onChange, name, id, text }) => {
         step='0.01'
         min='0'
         required
+        onWheel={(e) => e.target.blur()}
       />
       <label
         htmlFor={id}

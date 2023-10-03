@@ -269,6 +269,12 @@
             "home_id": "home_1"
           },
           {
+            "id": "flat_1ab",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_1"
+          },
+          {
             "id": "flat_2",
             "flat": "кв. 11",
             "is_active": 1,
@@ -372,61 +378,155 @@
     "id": "enterprise_10",
     "enterprise": "ТСЖ \"Возрождение\" ИНН 2361011460",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_6",
+        "adress": "Ейский р-н, Ейск г, Бердянская ул, д. 136/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_10",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_11",
     "enterprise": "ТСЖ \"ГАРМОНИЯ\" ИНН 2306033092",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_7",
+        "adress": "Ейский р-н, Ейск г, Калинина ул, д. 290",
+        "is_active": 1,
+        "enterprise_id": "enterprise_11",
+        "flats": []
+      },
+      {
+        "id": "home_8",
+        "adress": "Ейский р-н, Ейск г, Калинина ул, д. 290/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_11",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_12",
     "enterprise": "ТСЖ \"ДОМ ГЕНЕРАЛЬСКИЙ\" ИНН 2361004543",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_18",
+        "adress": "Ейский р-н, Ейск г, Октябрьская ул, д. 288",
+        "is_active": 1,
+        "enterprise_id": "enterprise_12",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_13",
     "enterprise": "ТСЖ \"ДОМ КРАСНАЯ 47/3\" ИНН 2361006893",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_21",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 47/3",
+        "is_active": 1,
+        "enterprise_id": "enterprise_13",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_14",
     "enterprise": "ТСЖ \"ДОМ НА К. МАРКСА 1\" ИНН 2361001084",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_19",
+        "adress": "Ейский р-н, Ейск г, К.Маркса ул, д. 1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_14",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_15",
     "enterprise": "ТСЖ \"ДОМ НА КОММУНИСТИЧЕСКОЙ 85/5\" ИНН 2361002024",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_20",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 85/5",
+        "is_active": 1,
+        "enterprise_id": "enterprise_15",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_16",
     "enterprise": "ТСЖ \"ДОМ НА ПЛЕХАНОВА 9/8\" ИНН 2306031634",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_29",
+        "adress": "Ейский р-н, Ейск г, Плеханова ул, д. 9/7",
+        "is_active": 1,
+        "enterprise_id": "enterprise_16",
+        "flats": []
+      },
+      {
+        "id": "home_9",
+        "adress": "Ейский р-н, Ейск г, Плеханова ул, д. 9/8",
+        "is_active": 1,
+        "enterprise_id": "enterprise_16",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_17",
     "enterprise": "ТСЖ \"ДОМ НА СЕДИНА 46/2\" ИНН 2306032437",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_22",
+        "adress": "Ейский р-н, Ейск г, Седина ул, д. 46/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_17",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_18",
     "enterprise": "ТСЖ \"ДОМ НА ЯСЕНСКОЙ 23\" ИНН 2306032772",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_10",
+        "adress": "Ейский р-н, Ейск г, Ясенская ул, д. 23",
+        "is_active": 1,
+        "enterprise_id": "enterprise_18",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_19",
     "enterprise": "ТСЖ \"ЕЙСКОЕ - 6\" ИНН 2306027701",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_11",
+        "adress": "Ейский р-н, Ейск г, Плеханова ул, д. 20",
+        "is_active": 1,
+        "enterprise_id": "enterprise_19",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_2",
@@ -713,37 +813,99 @@
     "id": "enterprise_20",
     "enterprise": "ТСЖ \"ЕЙСКОЕ 9\" ИНН 2361003902",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_23",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 49/9",
+        "is_active": 1,
+        "enterprise_id": "enterprise_20",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_21",
     "enterprise": "ТСЖ \"ЖЕМЧУЖИНА ПРИАЗОВЬЯ\" ИНН 2306031803",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_12",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 81",
+        "is_active": 1,
+        "enterprise_id": "enterprise_21",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_22",
     "enterprise": "ТСЖ \"ИСТОК\" ИНН 2306025817",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_24",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 83/4",
+        "is_active": 1,
+        "enterprise_id": "enterprise_22",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_23",
     "enterprise": "ТСЖ \"ЛЕВ\" ИНН 2306033085",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_13",
+        "adress": "Ейский р-н, Ейск г, Первомайская ул, д. 195",
+        "is_active": 1,
+        "enterprise_id": "enterprise_23",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_24",
     "enterprise": "ТСЖ \"НА ВОЛНАХ МЕЧТЫ\" ИНН 2361005770",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_14",
+        "adress": "Ейский р-н, Ейск г, Свободы ул, д. 36/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_24",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_25",
     "enterprise": "ТСЖ \"На Литейном\" ИНН 2361002842",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_26",
+        "adress": "Ейский р-н, Ейск г, Энгельса ул, д. 21/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_25",
+        "flats": []
+      },
+      {
+        "id": "home_27",
+        "adress": "Ейский р-н, Ейск г, Энгельса ул, д. 21/1, корп. 1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_25",
+        "flats": []
+      },
+      {
+        "id": "home_28",
+        "adress": "Ейский р-н, Ейск г, Энгельса ул, д. 21/1, корп. 2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_25",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_26",
@@ -755,151 +917,351 @@
     "id": "enterprise_27",
     "enterprise": "ТСЖ \"НА ПЛЕХАНОВА\" ИНН 2306027780",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_30",
+        "adress": "Ейский р-н, Ейск г, Плеханова ул, д. 2/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_27",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_28",
     "enterprise": "ТСЖ \"НА ТАМАНСКОЙ\" ИНН 2306027003",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_31",
+        "adress": "Ейский р-н, Ейск г, Таманская ул, д. 101",
+        "is_active": 1,
+        "enterprise_id": "enterprise_28",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_29",
     "enterprise": "ТСЖ \"НАШ ДОМ\" ИНН 2361002560",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_32",
+        "adress": "Ейский р-н, Ейск г, Калинина ул, д. 73/4",
+        "is_active": 1,
+        "enterprise_id": "enterprise_29",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_3",
     "enterprise": "ЛУЧЕЗАРНОЕ ТСЖ ИНН 2306026909",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_25",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 20/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_3",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_30",
     "enterprise": "ТСЖ \"НОВОСТРОЙ 59\" ИНН 2361009100",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_33",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 59/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_30",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_31",
     "enterprise": "ТСЖ \"Новостройка\" ИНН 2306025694",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_34",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 85/6",
+        "is_active": 1,
+        "enterprise_id": "enterprise_31",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_32",
     "enterprise": "ТСЖ \"НОЯБРЬ\" ИНН 2306032412",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_35",
+        "adress": "Ейский р-н, Ейск г, Морская ул, д. 271/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_32",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_33",
     "enterprise": "ТСЖ \"СОЛНЫШКО\" ИНН 2306027469",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_37",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 47/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_33",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_34",
     "enterprise": "ТСЖ \"СПРАВЕДЛИВОСТЬ\" ИНН 2361009291",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_38",
+        "adress": "Ейский р-н, Ейск г, Центральная ул, д. 64/4",
+        "is_active": 1,
+        "enterprise_id": "enterprise_34",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_35",
     "enterprise": "ТСЖ \"УЛ. ЯСЕНСКАЯ, 2/2\" ИНН 2361011773",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_39",
+        "adress": "Ейский р-н, Ейск г, Ясенская ул, д. 2/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_35",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_36",
     "enterprise": "ТСЖ \"ЧАЙКА - 2\" ИНН 2361010931",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_41",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 49/11",
+        "is_active": 1,
+        "enterprise_id": "enterprise_36",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_37",
     "enterprise": "ТСЖ \"ЧАЙКА\" ИНН 2306027589",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_40",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 49/10",
+        "is_active": 1,
+        "enterprise_id": "enterprise_37",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_38",
     "enterprise": "ТСЖ \"ЮНОСТЬ\" ИНН 2306024820",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_42",
+        "adress": "Ейский р-н, Ейск г, Горького ул, д. 7/3",
+        "is_active": 1,
+        "enterprise_id": "enterprise_38",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_39",
     "enterprise": "ТСН \"ВЕРА\" ИНН 2361016919",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_43",
+        "adress": "Ейский р-н, Ейск г, Кирпичная ул, д. 12/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_39",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_4",
     "enterprise": "ПРЕСТИЖ ПЛЮС ТСЖ ИНН 2361010829",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_36",
+        "adress": "Ейский, Ейск, Пушкина, д. 71, корп. 2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_4",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_40",
     "enterprise": "ТСН \"ВОСХОД\" ИНН 2361013280",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_44",
+        "adress": "Ейский р-н, Ейск г, Пионерская ул, д. 12",
+        "is_active": 1,
+        "enterprise_id": "enterprise_40",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_41",
     "enterprise": "ТСН \"ГЕРЦЕНА 88/5\" ИНН 2361012752",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_45",
+        "adress": "Ейский р-н, Ейск г, Герцена ул, д. 88/5",
+        "is_active": 1,
+        "enterprise_id": "enterprise_41",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_42",
     "enterprise": "ТСН \"ДОМ НА КРАСНОЙ 35/2\" ИНН 2361017704",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_47",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 35/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_42",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_43",
     "enterprise": "ТСН \"ДОМ НА СВОБОДЕ 38/1\" ИНН 2361017694",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_48",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 77/17",
+        "is_active": 1,
+        "enterprise_id": "enterprise_43",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_44",
     "enterprise": "ТСН \"ДОМ НА СВОБОДЕ 38/2\" ИНН 2361017648",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_49",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 77/17",
+        "is_active": 1,
+        "enterprise_id": "enterprise_44",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_45",
     "enterprise": "ТСН \"ДРУЖНЫЕ СОСЕДИ\" ИНН 2361016531",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_50",
+        "adress": "Ейский р-н, Ейск г, Октябрьская ул, д. 3, корп. 1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_45",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_46",
     "enterprise": "ТСН \"Заводское\" ИНН 2361012488",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_51",
+        "adress": "Ейский р-н, Ейск г, Заводской пер, д. 20/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_46",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_47",
     "enterprise": "ТСН \"КАЗАЧЬЯ 2Г\" ИНН 2361012985",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_52",
+        "adress": "Ейский р-н, Ейск г, Казачья ул, д. 2Г",
+        "is_active": 1,
+        "enterprise_id": "enterprise_47",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_48",
     "enterprise": "ТСН \"КЕДР\" ИНН 2361017711",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_53",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 57/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_48",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_49",
     "enterprise": "ТСН \"КОММУНИСТИЧЕСКАЯ 85/1\" ИНН 2361012590",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_54",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 85/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_49",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_5",
@@ -1160,31 +1522,71 @@
     "id": "enterprise_50",
     "enterprise": "ТСН \"КОНДОМИНИУМ\" ИНН 2306012617",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_55",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 59",
+        "is_active": 1,
+        "enterprise_id": "enterprise_50",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_51",
     "enterprise": "ТСН \"КРАСНАЯ 53/2\" ИНН 2361013700",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_56",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 53/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_51",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_52",
     "enterprise": "ТСН \"ЛЕНИНА 128\" ИНН 2361016570",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_57",
+        "adress": "Ейский р-н, Ейск г, Ленина ул, д. 128",
+        "is_active": 1,
+        "enterprise_id": "enterprise_52",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_53",
     "enterprise": "ТСН \"МЕЖДУНАРОДНАЯ 28/1\" ИНН 2361013467",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_58",
+        "adress": "Ейский р-н, Ейск г, Международная ул, д. 28/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_53",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_54",
     "enterprise": "ТСН \"НАШ ДОМ\" ИНН 2361016725",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_59",
+        "adress": "Ейский р-н, Ейск г, Коммунистическая ул, д. 49/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_54",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_55",
@@ -1196,37 +1598,85 @@
     "id": "enterprise_56",
     "enterprise": "ТСН \"СОЛНЕЧНОЕ\" ИНН 2361017581",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_60",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 59/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_56",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_57",
     "enterprise": "ТСН \"ТЕРЕМОКЪ\" ИНН 2361016348",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_61",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 57/4",
+        "is_active": 1,
+        "enterprise_id": "enterprise_57",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_58",
     "enterprise": "ТСН \"ХЕЛЬГА\" ИНН 2361017165",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_62",
+        "adress": "Ейский р-н, Ейск г, Горького ул, д. 25/5",
+        "is_active": 1,
+        "enterprise_id": "enterprise_58",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_59",
     "enterprise": "ТСН (ЖИЛЬЯ) \"ДОМ НА КРАСНОЙ 35/2 КОРПУС \"А\" ИНН 2361018539",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_63",
+        "adress": "Ейский р-н, Ейск г, Красная ул, д. 35/2, корп. А",
+        "is_active": 1,
+        "enterprise_id": "enterprise_59",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_6",
     "enterprise": "ТСЖ \"АЛЬБАТРОС\" ИНН 2306026881",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_5",
+        "adress": "Ейский р-н, Ейск г, Пионерская ул, д. 12/1",
+        "is_active": 1,
+        "enterprise_id": "enterprise_6",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_60",
     "enterprise": "ТСН (ЖИЛЬЯ) \"ЭЛИТ\" ИНН 2361019540",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_65",
+        "adress": "Ейский р-н, Ейск г, Седина ул, д. 53/5",
+        "is_active": 1,
+        "enterprise_id": "enterprise_60",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_61",
@@ -1238,18 +1688,42 @@
     "id": "enterprise_7",
     "enterprise": "ТСЖ \"БЕРЕЗКА\" ИНН 2361011068",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_15",
+        "adress": "Ейский р-н, Ейск г, Горького ул, д. 13/3",
+        "is_active": 1,
+        "enterprise_id": "enterprise_7",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_8",
     "enterprise": "ТСЖ \"БРИГАНТИНА\" ИНН 2361007872",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_16",
+        "adress": "Ейский р-н, Ейск г, Пионерская ул, д. 2Б",
+        "is_active": 1,
+        "enterprise_id": "enterprise_8",
+        "flats": []
+      }
+    ]
   },
   {
     "id": "enterprise_9",
     "enterprise": "ТСЖ \"ВЕТЕРОК\" ИНН 2306018263",
     "is_active": 1,
-    "homes": []
+    "homes": [
+      {
+        "id": "home_17",
+        "adress": "Ейский р-н, Ейск г, Кирпичная ул, д. 15",
+        "is_active": 1,
+        "enterprise_id": "enterprise_9",
+        "flats": []
+      }
+    ]
   }
 ]

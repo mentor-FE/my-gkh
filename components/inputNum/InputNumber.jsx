@@ -10,7 +10,6 @@ const InputNumber = ({onChange, name, id, text }) => {
         placeholder='00,00'
         step='0.01'
         min='0'
-        required
         onWheel={(e) => e.target.blur()}
       />
       <label

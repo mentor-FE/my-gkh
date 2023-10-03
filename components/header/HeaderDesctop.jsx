@@ -35,15 +35,15 @@ const HeaderDesctop = () => {
             2xl:text-xl
             '
             >
-              <p>
+              <p className="underline">
                 Ваш помощник в борьбе с бюрократией в сфере жилищно-коммунального
                 хозяйства
               </p>
-              <p className='ml-5 2xl:ml-10'>
+              <p className='ml-5 2xl:ml-10 underline'>
                 Готовы оказать помощь и поддержку в любом направлении сферы ЖКХ
               </p>
               <p
-                className='ml-10 
+                className='ml-10 underline
               lg:ml-14
               2xl:ml-24
               '
@@ -59,7 +59,7 @@ const HeaderDesctop = () => {
             md:mt-[29px]
             lg:text-5xl lg:ml-[100px] lg:mt-[35px]
             xl:ml-[120px] xl:mt-[60px]
-            2xl:text-6xl 2xl:ml-[135px] 2xl:mt-[50px]
+            2xl:text-6xl 2xl:ml-[135px] 2xl:mt-[42px]
             '
             >
               <p>Вместе мы можем многое</p>

@@ -76,7 +76,7 @@ const SelectApp = ({ handleChange, selectedEnterprise, selectedAdress }) => {
   }
 
   return (
-    <div className='grid md:grid-cols-3 md:gap-6'>
+    <div className='grid md:grid-cols-2 md:gap-6'>
       <div className=''>
         <label
           htmlFor='org1'

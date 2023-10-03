@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
             backgroundImage: `url(${bg.src})`,
           }}
         >
-          <div className='min-h-screen container mx-auto flex flex-col justify-between 2xl:px-28 '>
+          <div className='min-h-screen container mx-auto flex flex-col justify-between 2xl:px-32 pt-3 '>
             <TheHeader />
             <main className='flex-auto'>
               <div className='flex flex-col mt-2'>

@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import SelectApp from './../select/SelectApp'
 import { handleFormDataChange } from './../../utils/culculate'
-import InputNumber from '../inputNum/InputNumber'
+import SummNumber from '../SummNumber/SummNumber'
 import CheckboxField from '../checkboxField/checkboxField'
 import InputReadOnly from '../inputReadOnly/inputReadOnly'
 import InputText from '../inputText/inputText'
@@ -74,12 +74,12 @@ const FormPay = () => {
 
         {/* Поле 8: Содержание и текущий ремонт общего имущества МКД */}
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA1'
             id='floating_service'
             text='Содержание и текущий ремонт общего имущества МКД:'
-            value={formData['SUMMA1'] || 0}
+            value={formData['SUMMA1'] || '00.00'}
           />
         </div>
       </div>
@@ -87,24 +87,24 @@ const FormPay = () => {
       {/*  КРСОИ по ХВС  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA2'
             id='floating_service2'
             text='КРСОИ по ХВС:'
-            value={formData['SUMMA2'] || 0}
+            value={formData['SUMMA2'] || '00.00'}
           />
         </div>
 
         {/*  Поле 10: КРСОИ по ГВС  */}
 
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA3'
             id='floating_service3'
             text='КРСОИ по ГВС:'
-            value={formData['SUMMA3'] || 0}
+            value={formData['SUMMA3'] || '00.00'}
           />
         </div>
       </div>
@@ -113,22 +113,22 @@ const FormPay = () => {
       <div className='grid md:grid-cols-2 md:gap-6'>
         {/*  КРСОИ по Водоотведению  */}
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA4'
             id='floating_service4'
             text='КРСОИ по Водоотведению:'
-            value={formData['SUMMA4'] || 0}
+            value={formData['SUMMA4'] || '00.00'}
           />
         </div>
         {/*  КРСОИ по Электроэнергии  */}
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA5'
             id='floating_service5'
             text='КРСОИ по Электроэнергии:'
-            value={formData['SUMMA5'] || 0}
+            value={formData['SUMMA5'] || '00.00'}
           />
         </div>
       </div>
@@ -136,12 +136,12 @@ const FormPay = () => {
       {/*  Капитальный ремонт  */}
       <div className='grid md:grid-cols-2 md:gap-6'>
         <div className='relative z-0 w-full mb-6 group'>
-          <InputNumber
+          <SummNumber
             onChange={handleChange}
             name='SUMMA6'
             id='floating_service6'
             text='Капитальный ремонт:'
-            value={formData['SUMMA6'] || 0}
+            value={formData['SUMMA6'] || '00.00'}
           />
         </div>
         {/* Период оплаты */}

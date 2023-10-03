@@ -53,19 +53,42 @@ const SelectApp = ({ handleChange, selectedEnterprise, selectedAdress }) => {
   }, [filteredDataItem])
 
   const flats = useMemo(() => {
-    if (!filteredDataItem) return []
+    if (!filteredDataItem) return [];
     return filteredDataItem.homes.flatMap((home) =>
-      home.flats.map((flat) => {
-        if (home.adress === selectedAdress) {
-          return (
-            <option key={flat.id} value={flat.flat}>
-              {flat.flat}
-            </option>
-          )
-        }
-      })
-    )
-  }, [filteredDataItem, homeAdress, selectedAdress])
+      home.flats
+        .sort((a, b) => {
+          // Извлекаем числовые значения из строк и сравниваем их
+          const numA = parseInt(a.flat.replace(/[^\d]/g, ""));
+          const numB = parseInt(b.flat.replace(/[^\d]/g, ""));
+          return numA - numB;
+        })
+        .map((flat) => {
+          if (home.adress === selectedAdress) {
+            return (
+              <option key={flat.id} value={flat.flat}>
+                {flat.flat}
+              </option>
+            );
+          }
+          return null; // Возвращаем null, если условие не выполняется
+        })
+    );
+  }, [filteredDataItem, homeAdress, selectedAdress]);
+
+  // const flats = useMemo(() => {
+  //   if (!filteredDataItem) return []
+  //   return filteredDataItem.homes.flatMap((home) =>
+  //     home.flats.map((flat) => {
+  //       if (home.adress === selectedAdress) {
+  //         return (
+  //           <option key={flat.id} value={flat.flat}>
+  //             {flat.flat}
+  //           </option>
+  //         )
+  //       }
+  //     })
+  //   )
+  // }, [filteredDataItem, homeAdress, selectedAdress])
 
   if (loading) {
     return <div>Loading...</div>

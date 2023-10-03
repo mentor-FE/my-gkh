@@ -1,7 +1,8 @@
-const InputNumber = ({onChange, name, id, text }) => {
+const InputNumber = ({onChange, name, id, text, ...rest }) => {
   return (
     <>
       <input
+        {...rest}
         onChange={(e) => onChange(e)}
         type='number'
         name={name}
@@ -11,6 +12,7 @@ const InputNumber = ({onChange, name, id, text }) => {
         step='0.01'
         min='0'
         onWheel={(e) => e.target.blur()}
+        defaultValue='00,00'
       />
       <label
         htmlFor={id}

@@ -33,6 +33,8 @@ const FormPay = () => {
     handleSelections(e)
   }
 
+
+
   const isSend = isActiveAgreeOffer && isActiveAgreePersonal
   const summ = (Number(formData?.totalService) || 0) +
   (Number(formData?.totalServicePercent) || 0)
@@ -77,6 +79,7 @@ const FormPay = () => {
             name='SUMMA1'
             id='floating_service'
             text='Содержание и текущий ремонт общего имущества МКД:'
+            value={formData['SUMMA1'] || 0}
           />
         </div>
       </div>
@@ -89,6 +92,7 @@ const FormPay = () => {
             name='SUMMA2'
             id='floating_service2'
             text='КРСОИ по ХВС:'
+            value={formData['SUMMA2'] || 0}
           />
         </div>
 
@@ -100,6 +104,7 @@ const FormPay = () => {
             name='SUMMA3'
             id='floating_service3'
             text='КРСОИ по ГВС:'
+            value={formData['SUMMA3'] || 0}
           />
         </div>
       </div>
@@ -113,6 +118,7 @@ const FormPay = () => {
             name='SUMMA4'
             id='floating_service4'
             text='КРСОИ по Водоотведению:'
+            value={formData['SUMMA4'] || 0}
           />
         </div>
         {/*  КРСОИ по Электроэнергии  */}
@@ -122,6 +128,7 @@ const FormPay = () => {
             name='SUMMA5'
             id='floating_service5'
             text='КРСОИ по Электроэнергии:'
+            value={formData['SUMMA5'] || 0}
           />
         </div>
       </div>
@@ -134,6 +141,7 @@ const FormPay = () => {
             name='SUMMA6'
             id='floating_service6'
             text='Капитальный ремонт:'
+            value={formData['SUMMA6'] || 0}
           />
         </div>
         {/* Период оплаты */}

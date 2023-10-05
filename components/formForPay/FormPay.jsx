@@ -79,7 +79,7 @@ const FormPay = () => {
             name='SUMMA1'
             id='floating_service'
             text='Содержание и текущий ремонт общего имущества МКД:'
-            value={formData['SUMMA1'] || '00.00'}
+            value={formData['SUMMA1']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
       </div>
@@ -92,7 +92,7 @@ const FormPay = () => {
             name='SUMMA2'
             id='floating_service2'
             text='КРСОИ по ХВС:'
-            value={formData['SUMMA2'] || '00.00'}
+            value={formData['SUMMA2']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
 
@@ -104,7 +104,7 @@ const FormPay = () => {
             name='SUMMA3'
             id='floating_service3'
             text='КРСОИ по ГВС:'
-            value={formData['SUMMA3'] || '00.00'}
+            value={formData['SUMMA3']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
       </div>
@@ -118,7 +118,7 @@ const FormPay = () => {
             name='SUMMA4'
             id='floating_service4'
             text='КРСОИ по Водоотведению:'
-            value={formData['SUMMA4'] || '00.00'}
+            value={formData['SUMMA4']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
         {/*  КРСОИ по Электроэнергии  */}
@@ -128,7 +128,7 @@ const FormPay = () => {
             name='SUMMA5'
             id='floating_service5'
             text='КРСОИ по Электроэнергии:'
-            value={formData['SUMMA5'] || '00.00'}
+            value={formData['SUMMA5']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
       </div>
@@ -141,7 +141,7 @@ const FormPay = () => {
             name='SUMMA6'
             id='floating_service6'
             text='Капитальный ремонт:'
-            value={formData['SUMMA6'] || '00.00'}
+            value={formData['SUMMA6']?.replace(/,/g, '.') || '00.00'}
           />
         </div>
         {/* Период оплаты */}

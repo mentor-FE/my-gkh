@@ -29740,7 +29740,638 @@
         "adress": "Ейский р-н, Ейск г, Красная ул, д. 59/1",
         "is_active": 1,
         "enterprise_id": "enterprise_56",
-        "flats": []
+        "flats": [
+          {
+            "id": "flat_5112",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5113",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5114",
+            "flat": "кв. 100",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5115",
+            "flat": "кв. 101",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5116",
+            "flat": "кв. 102",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5117",
+            "flat": "кв. 103",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5118",
+            "flat": "кв. 104",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5119",
+            "flat": "кв. 105",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5120",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5121",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5122",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5123",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5124",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5125",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5126",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5127",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5128",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5129",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5130",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5131",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5132",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5133",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5134",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5135",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5136",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5137",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5138",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5139",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5140",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5141",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5142",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5143",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5144",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5145",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5146",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5147",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5148",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5149",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5150",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5151",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5152",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5153",
+            "flat": "кв. 41",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5154",
+            "flat": "кв. 42",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5155",
+            "flat": "кв. 43",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5156",
+            "flat": "кв. 44",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5157",
+            "flat": "кв. 45",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5158",
+            "flat": "кв. 46",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5159",
+            "flat": "кв. 47",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5160",
+            "flat": "кв. 48",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5161",
+            "flat": "кв. 49",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5162",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5163",
+            "flat": "кв. 50",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5164",
+            "flat": "кв. 51",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5165",
+            "flat": "кв. 52",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5166",
+            "flat": "кв. 53",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5167",
+            "flat": "кв. 54",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5168",
+            "flat": "кв. 55",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5169",
+            "flat": "кв. 56",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5170",
+            "flat": "кв. 57",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5171",
+            "flat": "кв. 58",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5172",
+            "flat": "кв. 59",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5173",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5174",
+            "flat": "кв. 60",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5175",
+            "flat": "кв. 61",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5176",
+            "flat": "кв. 62",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5177",
+            "flat": "кв. 63",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5178",
+            "flat": "кв. 64",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5179",
+            "flat": "кв. 65",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5180",
+            "flat": "кв. 66",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5181",
+            "flat": "кв. 67",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5182",
+            "flat": "кв. 68",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5183",
+            "flat": "кв. 69",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5184",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5185",
+            "flat": "кв. 70",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5186",
+            "flat": "кв. 71",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5187",
+            "flat": "кв. 72",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5188",
+            "flat": "кв. 73",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5189",
+            "flat": "кв. 74",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5190",
+            "flat": "кв. 75",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5191",
+            "flat": "кв. 76",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5192",
+            "flat": "кв. 77",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5193",
+            "flat": "кв. 78",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5194",
+            "flat": "кв. 79",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5195",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5196",
+            "flat": "кв. 80",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5197",
+            "flat": "кв. 81",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5198",
+            "flat": "кв. 82",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5199",
+            "flat": "кв. 83",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5200",
+            "flat": "кв. 84",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5201",
+            "flat": "кв. 85",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5202",
+            "flat": "кв. 86",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5203",
+            "flat": "кв. 87",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5204",
+            "flat": "кв. 88",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5205",
+            "flat": "кв. 89",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5206",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5207",
+            "flat": "кв. 90",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5208",
+            "flat": "кв. 91",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5209",
+            "flat": "кв. 92",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5210",
+            "flat": "кв. 93",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5211",
+            "flat": "кв. 94",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5212",
+            "flat": "кв. 95",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5213",
+            "flat": "кв. 96",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5214",
+            "flat": "кв. 97",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5215",
+            "flat": "кв. 98",
+            "is_active": 1,
+            "home_id": "home_60"
+          },
+          {
+            "id": "flat_5216",
+            "flat": "кв. 99",
+            "is_active": 1,
+            "home_id": "home_60"
+          }
+        ]
       }
     ]
   },
@@ -29754,7 +30385,800 @@
         "adress": "Ейский р-н, Ейск г, Красная ул, д. 57/4",
         "is_active": 1,
         "enterprise_id": "enterprise_57",
-        "flats": []
+        "flats": [
+          {
+            "id": "flat_5217",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5218",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5219",
+            "flat": "кв. 100",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5220",
+            "flat": "кв. 101",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5221",
+            "flat": "кв. 102",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5222",
+            "flat": "кв. 103",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5223",
+            "flat": "кв. 104",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5224",
+            "flat": "кв. 105",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5225",
+            "flat": "кв. 106",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5226",
+            "flat": "кв. 107",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5227",
+            "flat": "кв. 108",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5228",
+            "flat": "кв. 109",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5229",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5230",
+            "flat": "кв. 110",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5231",
+            "flat": "кв. 111",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5232",
+            "flat": "кв. 112",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5233",
+            "flat": "кв. 113",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5234",
+            "flat": "кв. 114",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5235",
+            "flat": "кв. 115",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5236",
+            "flat": "кв. 116",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5237",
+            "flat": "кв. 117",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5238",
+            "flat": "кв. 118",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5239",
+            "flat": "кв. 119",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5240",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5241",
+            "flat": "кв. 120",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5242",
+            "flat": "кв. 121",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5243",
+            "flat": "кв. 122",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5244",
+            "flat": "кв. 123",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5245",
+            "flat": "кв. 124",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5246",
+            "flat": "кв. 125",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5247",
+            "flat": "кв. 126",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5248",
+            "flat": "кв. 127",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5249",
+            "flat": "кв. 128",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5250",
+            "flat": "кв. 129",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5251",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5252",
+            "flat": "кв. 130",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5253",
+            "flat": "кв. 131",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5254",
+            "flat": "кв. 132",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5255",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5256",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5257",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5258",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5259",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5260",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5261",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5262",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5263",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5264",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5265",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5266",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5267",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5268",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5269",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5270",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5271",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5272",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5273",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5274",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5275",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5276",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5277",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5278",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5279",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5280",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5281",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5282",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5283",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5284",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5285",
+            "flat": "кв. 41",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5286",
+            "flat": "кв. 42",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5287",
+            "flat": "кв. 43",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5288",
+            "flat": "кв. 44",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5289",
+            "flat": "кв. 45",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5290",
+            "flat": "кв. 46",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5291",
+            "flat": "кв. 47",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5292",
+            "flat": "кв. 48",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5293",
+            "flat": "кв. 49",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5294",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5295",
+            "flat": "кв. 50",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5296",
+            "flat": "кв. 51",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5297",
+            "flat": "кв. 52",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5298",
+            "flat": "кв. 53",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5299",
+            "flat": "кв. 54",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5300",
+            "flat": "кв. 55",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5301",
+            "flat": "кв. 56",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5302",
+            "flat": "кв. 57",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5303",
+            "flat": "кв. 58",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5304",
+            "flat": "кв. 59",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5305",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5306",
+            "flat": "кв. 60",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5307",
+            "flat": "кв. 61",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5308",
+            "flat": "кв. 62",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5309",
+            "flat": "кв. 63",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5310",
+            "flat": "кв. 64",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5311",
+            "flat": "кв. 65",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5312",
+            "flat": "кв. 66",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5313",
+            "flat": "кв. 67",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5314",
+            "flat": "кв. 68",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5315",
+            "flat": "кв. 69",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5316",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5317",
+            "flat": "кв. 70",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5318",
+            "flat": "кв. 71",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5319",
+            "flat": "кв. 72",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5320",
+            "flat": "кв. 73",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5321",
+            "flat": "кв. 74",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5322",
+            "flat": "кв. 75",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5323",
+            "flat": "кв. 76",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5324",
+            "flat": "кв. 77",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5325",
+            "flat": "кв. 78",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5326",
+            "flat": "кв. 79",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5327",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5328",
+            "flat": "кв. 80",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5329",
+            "flat": "кв. 81",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5330",
+            "flat": "кв. 82",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5331",
+            "flat": "кв. 83",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5332",
+            "flat": "кв. 84",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5333",
+            "flat": "кв. 85",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5334",
+            "flat": "кв. 86",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5335",
+            "flat": "кв. 87",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5336",
+            "flat": "кв. 88",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5337",
+            "flat": "кв. 89",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5338",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5339",
+            "flat": "кв. 90",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5340",
+            "flat": "кв. 91",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5341",
+            "flat": "кв. 92",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5342",
+            "flat": "кв. 93",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5343",
+            "flat": "кв. 94",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5344",
+            "flat": "кв. 95",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5345",
+            "flat": "кв. 96",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5346",
+            "flat": "кв. 97",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5347",
+            "flat": "кв. 98",
+            "is_active": 1,
+            "home_id": "home_61"
+          },
+          {
+            "id": "flat_5348",
+            "flat": "кв. 99",
+            "is_active": 1,
+            "home_id": "home_61"
+          }
+        ]
       }
     ]
   },
@@ -29768,7 +31192,296 @@
         "adress": "Ейский р-н, Ейск г, Горького ул, д. 25/5",
         "is_active": 1,
         "enterprise_id": "enterprise_58",
-        "flats": []
+        "flats": [
+          {
+            "id": "flat_5349",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5350",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5351",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5352",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5353",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5354",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5355",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5356",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5357",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5358",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5359",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5360",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5361",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5362",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5363",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5364",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5365",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5366",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5367",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5368",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5369",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5370",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5371",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5372",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5373",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5374",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5375",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5376",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5377",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5378",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5379",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5380",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5381",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5382",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5383",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5384",
+            "flat": "кв. 41",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5385",
+            "flat": "кв. 42",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5386",
+            "flat": "кв. 43",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5387",
+            "flat": "кв. 44",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5388",
+            "flat": "кв. 45",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5389",
+            "flat": "кв. 46",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5390",
+            "flat": "кв. 47",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5391",
+            "flat": "кв. 48",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5392",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5393",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5394",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5395",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_62"
+          },
+          {
+            "id": "flat_5396",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_62"
+          }
+        ]
       }
     ]
   },
@@ -29782,7 +31495,488 @@
         "adress": "Ейский р-н, Ейск г, Красная ул, д. 35/2, корп. А",
         "is_active": 1,
         "enterprise_id": "enterprise_59",
-        "flats": []
+        "flats": [
+          {
+            "id": "flat_5397",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5398",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5399",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5400",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5401",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5402",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5403",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5404",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5405",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5406",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5407",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5408",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5409",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5410",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5411",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5412",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5413",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5414",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5415",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5416",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5417",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5418",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5419",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5420",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5421",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5422",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5423",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5424",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5425",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5426",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5427",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5428",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5429",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5430",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5431",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5432",
+            "flat": "кв. 41",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5433",
+            "flat": "кв. 42",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5434",
+            "flat": "кв. 43",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5435",
+            "flat": "кв. 44",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5436",
+            "flat": "кв. 45",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5437",
+            "flat": "кв. 46",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5438",
+            "flat": "кв. 47",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5439",
+            "flat": "кв. 48",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5440",
+            "flat": "кв. 49",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5441",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5442",
+            "flat": "кв. 50",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5443",
+            "flat": "кв. 51",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5444",
+            "flat": "кв. 52",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5445",
+            "flat": "кв. 53",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5446",
+            "flat": "кв. 54",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5447",
+            "flat": "кв. 55",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5448",
+            "flat": "кв. 56",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5449",
+            "flat": "кв. 57",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5450",
+            "flat": "кв. 58",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5451",
+            "flat": "кв. 59",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5452",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5453",
+            "flat": "кв. 60",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5454",
+            "flat": "кв. 61",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5455",
+            "flat": "кв. 62",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5456",
+            "flat": "кв. 63",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5457",
+            "flat": "кв. 64",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5458",
+            "flat": "кв. 65",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5459",
+            "flat": "кв. 66",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5460",
+            "flat": "кв. 67",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5461",
+            "flat": "кв. 68",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5462",
+            "flat": "кв. 69",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5463",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5464",
+            "flat": "кв. 70",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5465",
+            "flat": "кв. 71",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5466",
+            "flat": "кв. 72",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5467",
+            "flat": "кв. 73",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5468",
+            "flat": "кв. 74",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5469",
+            "flat": "кв. 75",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5470",
+            "flat": "кв. 76",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5471",
+            "flat": "кв. 77",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5472",
+            "flat": "кв. 78",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5473",
+            "flat": "кв. 79",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5474",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5475",
+            "flat": "кв. 80",
+            "is_active": 1,
+            "home_id": "home_63"
+          },
+          {
+            "id": "flat_5476",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_63"
+          }
+        ]
       }
     ]
   },
@@ -30147,7 +32341,512 @@
         "adress": "Ейский р-н, Ейск г, Седина ул, д. 53/5",
         "is_active": 1,
         "enterprise_id": "enterprise_60",
-        "flats": []
+        "flats": [
+          {
+            "id": "flat_5476a",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5477",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5478",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5479",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5480",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5481",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5482",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5483",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5484",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5485",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5486",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5487",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5488",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5489",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5490",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5491",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5492",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5493",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5494",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5495",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5496",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5497",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5498",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5499",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5500",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5501",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5502",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5503",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5504",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5505",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5506",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5507",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5508",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5509",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5510",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5511",
+            "flat": "кв. 41",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5512",
+            "flat": "кв. 42",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5513",
+            "flat": "кв. 43",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5514",
+            "flat": "кв. 44",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5515",
+            "flat": "кв. 45",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5516",
+            "flat": "кв. 46",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5517",
+            "flat": "кв. 47",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5518",
+            "flat": "кв. 48",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5519",
+            "flat": "кв. 49",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5520",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5521",
+            "flat": "кв. 50",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5522",
+            "flat": "кв. 51",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5523",
+            "flat": "кв. 52",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5524",
+            "flat": "кв. 53",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5525",
+            "flat": "кв. 54",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5526",
+            "flat": "кв. 55",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5527",
+            "flat": "кв. 56",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5528",
+            "flat": "кв. 57",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5529",
+            "flat": "кв. 58",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5530",
+            "flat": "кв. 59",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5531",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5532",
+            "flat": "кв. 60",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5533",
+            "flat": "кв. 61",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5534",
+            "flat": "кв. 62",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5535",
+            "flat": "кв. 63",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5536",
+            "flat": "кв. 64",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5537",
+            "flat": "кв. 65",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5538",
+            "flat": "кв. 66",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5539",
+            "flat": "кв. 67",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5540",
+            "flat": "кв. 68",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5541",
+            "flat": "кв. 69",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5542",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5543",
+            "flat": "кв. 70",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5544",
+            "flat": "кв. 71",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5545",
+            "flat": "кв. 72",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5546",
+            "flat": "кв. 73",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5547",
+            "flat": "кв. 74",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5548",
+            "flat": "кв. 75",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5549",
+            "flat": "кв. 76",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5550",
+            "flat": "кв. 77",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5551",
+            "flat": "кв. 78",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5552",
+            "flat": "кв. 79",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5553",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5554",
+            "flat": "кв. 80",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5555",
+            "flat": "кв. 81",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5556",
+            "flat": "кв. 82",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5557",
+            "flat": "кв. 83",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5558",
+            "flat": "кв. 84",
+            "is_active": 1,
+            "home_id": "home_65"
+          },
+          {
+            "id": "flat_5559",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_65"
+          }
+        ]
       }
     ]
   },

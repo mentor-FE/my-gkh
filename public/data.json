@@ -32857,6 +32857,261 @@
     "homes": []
   },
   {
+    "id": "enterprise_62",
+    "enterprise": "ТСН \"Горького 25/2\" ИНН 2361012946",
+    "is_active": 1,
+    "homes": [
+      {
+        "id": "home_67",
+        "adress": "Ейский р-н, Ейск г, Горького ул, д. 25/2",
+        "is_active": 1,
+        "enterprise_id": "enterprise_62",
+        "flats": [
+          {
+            "id": "flat_5560",
+            "flat": "кв. 1",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5561",
+            "flat": "кв. 10",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5562",
+            "flat": "кв. 11",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5563",
+            "flat": "кв. 12",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5564",
+            "flat": "кв. 13",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5565",
+            "flat": "кв. 14",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5566",
+            "flat": "кв. 15",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5567",
+            "flat": "кв. 16",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5568",
+            "flat": "кв. 17",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5569",
+            "flat": "кв. 18",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5570",
+            "flat": "кв. 19",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5571",
+            "flat": "кв. 2",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5572",
+            "flat": "кв. 20",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5573",
+            "flat": "кв. 21",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5574",
+            "flat": "кв. 22",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5575",
+            "flat": "кв. 23",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5576",
+            "flat": "кв. 24",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5577",
+            "flat": "кв. 25",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5578",
+            "flat": "кв. 26",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5579",
+            "flat": "кв. 27",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5580",
+            "flat": "кв. 28",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5581",
+            "flat": "кв. 29",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5582",
+            "flat": "кв. 3",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5583",
+            "flat": "кв. 30",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5584",
+            "flat": "кв. 31",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5585",
+            "flat": "кв. 32",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5586",
+            "flat": "кв. 33",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5587",
+            "flat": "кв. 34",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5588",
+            "flat": "кв. 35",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5589",
+            "flat": "кв. 36",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5590",
+            "flat": "кв. 37",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5591",
+            "flat": "кв. 38",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5592",
+            "flat": "кв. 39",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5593",
+            "flat": "кв. 4",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5594",
+            "flat": "кв. 40",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5595",
+            "flat": "кв. 5",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5596",
+            "flat": "кв. 6",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5597",
+            "flat": "кв. 7",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5598",
+            "flat": "кв. 8",
+            "is_active": 1,
+            "home_id": "home_67"
+          },
+          {
+            "id": "flat_5599",
+            "flat": "кв. 9",
+            "is_active": 1,
+            "home_id": "home_67"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "enterprise_7",
     "enterprise": "ТСЖ \"БЕРЕЗКА\" ИНН 2361011068",
     "is_active": 1,

@@ -249,8 +249,9 @@ const FormPay = () => {
         <CheckboxField name='agree_offer' setAgreeOffer={setIsActiveAgreeOffer}>
           Я согласен с{' '}
           <a
-            href='#'
+            href='/public/files/Договор_на_прием_платежей.pdf'
             className='text-blue-600 hover:underline dark:text-blue-500'
+            target='_blank'
           >
             договором оферты
           </a>

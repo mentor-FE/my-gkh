@@ -239,8 +239,8 @@ const FormPay = () => {
 
       <div id='grand_total'>
         Итого{' '}
-        {(Number(formData?.totalService) || 0) +
-          (Number(formData?.totalServicePercent) || 0)}{' '}
+        {((Number(formData?.totalService) || 0) +
+          (Number(formData?.totalServicePercent) || 0)).toFixed(2)}{' '}
         руб.
       </div>
 
@@ -249,7 +249,7 @@ const FormPay = () => {
         <CheckboxField name='agree_offer' setAgreeOffer={setIsActiveAgreeOffer}>
           Я согласен с{' '}
           <a
-            href='/public/files/Договор_на_прием_платежей.pdf'
+            href='/files/paycontract.pdf'
             className='text-blue-600 hover:underline dark:text-blue-500'
             target='_blank'
           >
